@@ -1,6 +1,7 @@
 import { MapPin, Calendar, Clock, AlertTriangle, MessageCircle } from "lucide-react";
 
 const WHATSAPP_LINK = "https://wa.me/244936351564?text=Olá! Quero garantir a minha vaga na formação da MAGAF.";
+const WHATSAPP_BOOKING = "https://wa.me/244936351564?text=Olá! Quero fazer uma marcação para a formação da MAGAF.";
 
 const locations = [
   {

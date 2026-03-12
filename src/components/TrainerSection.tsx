@@ -8,7 +8,7 @@ const TrainerSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="aspect-[4/5] max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
-              <img src={gasparsImg} alt="Gaspars Manuel" className="w-full h-full object-cover" />
+              <img src={gasparsImg} alt="Gaspar Manuel" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-4 -right-4 md:right-4 w-48 h-48 rounded-2xl bg-primary/10 -z-10" />
           </div>

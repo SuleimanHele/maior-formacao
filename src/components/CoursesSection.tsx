@@ -8,6 +8,7 @@ const courses = [
   "Criar criativos que chamam atenção e vendem",
   "Estruturar campanhas lucrativas",
   "Estratégias para gerar vendas online",
+  "WhatsApp Vendedor – como vender pelo WhatsApp",
   "Importação de produtos",
   "Abertura de conta Visa para pagamentos online",
   "Curso de portfólio profissional",
