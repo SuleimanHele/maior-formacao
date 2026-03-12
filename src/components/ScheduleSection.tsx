@@ -51,7 +51,7 @@ const ScheduleSection = () => {
             <AlertTriangle className="h-4 w-4" />
             As vagas são limitadas para garantir melhor acompanhamento.
           </div>
-          <div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={WHATSAPP_LINK}
               target="_blank"
@@ -59,6 +59,15 @@ const ScheduleSection = () => {
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
             >
               Garantir minha vaga
+            </a>
+            <a
+              href={WHATSAPP_BOOKING}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary px-10 py-4 text-lg font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+            >
+              <Calendar className="h-5 w-5" />
+              Fazer marcação
             </a>
           </div>
         </div>
