@@ -15,7 +15,7 @@ const TrainerSection = () => {
 
           <div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2">
-              Gaspars Manuel
+              Gaspar Manuel
             </h2>
             <p className="text-primary font-medium mb-6">
               Especialista em Gestão, Marketing Digital e Tráfego Pago
