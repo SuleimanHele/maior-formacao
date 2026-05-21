@@ -15,11 +15,14 @@ const WHATSAPP_LINK =
 
 const FooterSection = () => {
   return (
-    <footer className="relative overflow-hidden bg-[#0B0F1A] py-20">
+    <footer className="relative overflow-hidden bg-[#05070F] py-20">
 
       {/* GLOW */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#E11D48]/10 blur-[140px] rounded-full" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#E11D48]/10 blur-[160px] rounded-full" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#E11D48]/10 blur-[160px] rounded-full" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#E11D48]/10 blur-[180px] rounded-full" />
+
+      {/* TOP BORDER GLOW */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="container max-w-[1280px] mx-auto px-6 relative z-10">
 
@@ -82,6 +85,7 @@ const FooterSection = () => {
                 <MapPin className="h-4 w-4" />
                 Luanda – Angola
               </div>
+
             </div>
           </div>
 
@@ -96,6 +100,7 @@ const FooterSection = () => {
               <a
                 href="https://instagram.com"
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-3 text-white/60 hover:text-[#E11D48] transition"
               >
                 <Instagram className="h-4 w-4" />
@@ -105,6 +110,7 @@ const FooterSection = () => {
               <a
                 href="https://facebook.com"
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-3 text-white/60 hover:text-[#E11D48] transition"
               >
                 <Facebook className="h-4 w-4" />
@@ -114,17 +120,20 @@ const FooterSection = () => {
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-3 text-[#E11D48] hover:opacity-80 transition"
               >
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp
               </a>
+
             </div>
           </div>
+
         </div>
 
         {/* CTA BAR */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
 
           <div>
             <h3 className="text-white text-[18px] font-semibold">
@@ -139,18 +148,21 @@ const FooterSection = () => {
           <a
             href={WHATSAPP_LINK}
             target="_blank"
-            className="inline-flex items-center gap-2 rounded-full bg-[#E11D48] px-6 py-3 font-semibold text-white hover:translate-y-[-2px] transition"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[#E11D48] px-6 py-3 font-semibold text-white shadow-lg shadow-[#E11D48]/20 transition hover:translate-y-[-2px] hover:bg-[#c5163d]"
           >
             <MessageCircle className="h-5 w-5" />
             Falar no WhatsApp
             <ArrowRight className="h-4 w-4" />
           </a>
+
         </div>
 
         {/* BOTTOM */}
-        <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-white/40">
+        <div className="mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/40">
           © {new Date().getFullYear()} MAGAF. Todos os direitos reservados.
         </div>
+
       </div>
     </footer>
   );

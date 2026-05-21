@@ -37,7 +37,7 @@ const formations = [
 
 const CoursesSection = () => {
   return (
-    <section className="relative overflow-hidden py-24 bg-white">
+    <section id="formacoes" className="relative overflow-hidden py-24 bg-white">
 
       {/* GLOW CONTROLADO */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-red-600/10 blur-[140px] rounded-full" />

@@ -9,6 +9,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import type { LucideIcon } from "lucide-react";
+
 const WHATSAPP_LINK =
   "https://wa.me/244936351564?text=Olá! Quero garantir a minha vaga na formação da MAGAF.";
 
@@ -18,13 +20,13 @@ const WHATSAPP_BOOKING =
 type ScheduleCardItem = {
   label: string;
   value: string;
-  icon?: any;
+  icon?: LucideIcon;
 };
 
 type ScheduleCard = {
   id: number;
   title: string;
-  icon: any;
+  icon: LucideIcon;
   items: ScheduleCardItem[];
 };
 
@@ -62,7 +64,7 @@ const ScheduleSection = () => {
   return (
     <section id="turmas" className="relative overflow-hidden py-24 bg-[#F5F5F5]">
 
-      {/* BACKGROUND GLOW */}
+      {/* GLOW */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-[#E10600]/10 blur-[120px] rounded-full" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#E10600]/10 blur-[140px] rounded-full" />
 
@@ -97,7 +99,7 @@ const ScheduleSection = () => {
                 className="group relative overflow-hidden rounded-2xl border border-[#E5E5E5] bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
 
-                {/* TOP ICON */}
+                {/* HEADER */}
                 <div className="flex items-center gap-3 mb-6">
 
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#E10600]/10 text-[#E10600]">
@@ -155,10 +157,9 @@ const ScheduleSection = () => {
 
         </div>
 
-        {/* CTA BUTTONS */}
+        {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
-          {/* PRIMARY CTA */}
           <a
             href={WHATSAPP_LINK}
             target="_blank"
@@ -170,7 +171,6 @@ const ScheduleSection = () => {
             <ArrowRight className="h-4 w-4" />
           </a>
 
-          {/* SECONDARY CTA */}
           <a
             href={WHATSAPP_BOOKING}
             target="_blank"
