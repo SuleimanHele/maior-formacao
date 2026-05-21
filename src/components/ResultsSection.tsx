@@ -1,8 +1,8 @@
 import trafego1 from "@/assets/trafego-1.jpeg";
 import trafego2 from "@/assets/trafego-2.jpeg";
 import trafego3 from "@/assets/trafego-3.jpeg";
-import trafego4 from "@/assets/trafego-4.jfif";
-import trafego5 from "@/assets/trafego-5.jfif";
+import trafego4 from "@/assets/trafego-4.jpeg";
+import trafego5 from "@/assets/trafego-5.jpeg";
 
 import {
   Carousel,
@@ -16,27 +16,27 @@ import { Sparkles, TrendingUp } from "lucide-react";
 
 const photos = [
   {
-    src: trafego1,
+    src: trafego2,
     title: "Aula prática de Tráfego Pago",
     desc: "Estratégias reais aplicadas no Meta Ads",
   },
   {
-    src: trafego2,
+    src: trafego3,
     title: "Gestão de campanhas",
     desc: "Otimização e análise de anúncios",
   },
   {
-    src: trafego3,
+    src: trafego4,
     title: "Execução prática",
     desc: "Aplicação direta em negócios reais",
   },
   {
-    src: trafego4,
+    src: trafego5,
     title: "Sessão intensiva",
     desc: "Acompanhamento próximo aos alunos",
   },
   {
-    src: trafego5,
+    src: trafego1,
     title: "Resultados reais",
     desc: "Transformação de conhecimento em vendas",
   },

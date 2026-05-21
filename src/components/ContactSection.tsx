@@ -13,6 +13,15 @@ import logoMagaf from "@/assets/logo-magaf.jpg";
 const WHATSAPP_LINK =
   "https://wa.me/244936351564?text=Olá! Quero saber mais sobre a formação da MAGAF.";
 
+const navItems = [
+  { label: "Início", href: "#inicio" },
+  { label: "Sobre", href: "#sobre" },
+  { label: "Formações", href: "#formacoes" },
+  { label: "Formadores", href: "#formadores" },
+  { label: "Turmas", href: "#turmas" },
+  { label: "FAQ", href: "#faq" },
+];
+
 const FooterSection = () => {
   return (
     <footer className="relative overflow-hidden bg-[#05070F] py-20">
@@ -53,15 +62,24 @@ const FooterSection = () => {
               Links rápidos
             </h4>
 
-            <ul className="space-y-3 text-sm text-white/60">
-              {["Início", "Formações", "Formadores", "FAQ"].map((item) => (
-                <li
-                  key={item}
-                  className="hover:text-[#E11D48] transition cursor-pointer"
-                >
-                  {item}
+            <ul className="space-y-3 text-sm">
+
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="
+                      text-white/60
+                      hover:text-[#E11D48]
+                      transition
+                      duration-300
+                    "
+                  >
+                    {item.label}
+                  </a>
                 </li>
               ))}
+
             </ul>
           </div>
 
