@@ -149,10 +149,41 @@ const ScheduleSection = () => {
         {/* ALERT */}
         <div className="text-center mb-10">
 
-          <div className="inline-flex items-center gap-2 rounded-xl border border-[#E10600]/20 bg-[#E10600]/5 px-5 py-3 text-sm text-[#E10600] font-medium">
+          <div
+            className="
+      relative inline-flex items-center gap-3
+      overflow-hidden
+      rounded-xl
+      border border-[#E10600]/30
+      bg-[#E10600]/10
+      px-5 py-3
+      text-sm
+      font-semibold
+      text-[#E10600]
+      animate-pulse
+      shadow-[0_0_25px_rgba(225,6,0,0.18)]
+      backdrop-blur-sm
+    "
+          >
 
-            <AlertTriangle className="h-4 w-4" />
-            Vagas limitadas para garantir acompanhamento individual.
+            {/* GLOW ANIMADO */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#E10600]/10 to-transparent animate-[shine_3s_linear_infinite]" />
+
+            {/* ALERT DOT */}
+            <span className="relative flex h-3 w-3">
+
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E10600] opacity-75" />
+
+              <span className="relative inline-flex h-3 w-3 rounded-full bg-[#E10600]" />
+
+            </span>
+
+            <AlertTriangle className="h-4 w-4 shrink-0" />
+
+            <span className="relative z-10">
+              Vagas limitadas para garantir acompanhamento individual.
+            </span>
+
           </div>
 
         </div>

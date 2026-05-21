@@ -87,16 +87,44 @@ const CTASection = () => {
           </div>
 
           {/* URGENCY */}
-          <p className="mt-8 text-sm text-muted-foreground flex items-center justify-center gap-2">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E10600] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#E10600]"></span>
-            </span>
+          <div className="mt-10 flex justify-center">
 
-            <span className="text-[#E10600] font-medium">
-              Vagas limitadas para garantir acompanhamento individual
-            </span>
-          </p>
+            <div
+              className="
+      relative overflow-hidden
+      inline-flex items-center gap-3
+      rounded-full
+      border border-[#E10600]/20
+      bg-[#E10600]/10
+      px-5 py-3
+      text-sm
+      font-semibold
+      text-[#E10600]
+      shadow-[0_0_25px_rgba(225,6,0,0.15)]
+      backdrop-blur-sm
+    "
+            >
+
+              {/* SHINE EFFECT */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[shine_3s_linear_infinite]" />
+
+              {/* ALERT DOT */}
+              <span className="relative flex h-3 w-3">
+
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E10600] opacity-75" />
+
+                <span className="relative inline-flex h-3 w-3 rounded-full bg-[#E10600]" />
+
+              </span>
+
+              {/* TEXT */}
+              <span className="relative z-10">
+                Vagas limitadas para garantir acompanhamento individual
+              </span>
+
+            </div>
+
+          </div>
 
         </div>
       </div>
