@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-import trafego1 from "@/assets/trafego-1.jpeg";
 import trafego2 from "@/assets/trafego-2.jpeg";
 import trafego3 from "@/assets/trafego-3.jpeg";
 import trafego4 from "@/assets/trafego-4.jpeg";
@@ -43,11 +41,7 @@ const photos = [
     title: "Sessão intensiva",
     desc: "Acompanhamento próximo aos alunos",
   },
-  {
-    src: trafego1,
-    title: "Resultados reais",
-    desc: "Transformação de conhecimento em vendas",
-  },
+  
 ];
 
 const ResultsSection = () => {
@@ -181,7 +175,7 @@ const ResultsSection = () => {
               "Aulas práticas reais",
               "Alunos em execução",
               "Resultados mensuráveis",
-              "Campanhas reais",
+              "Acompanhamento Real",
             ].map((text) => (
               <div
                 key={text}

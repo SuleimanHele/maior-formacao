@@ -116,7 +116,7 @@ const FooterSection = () => {
             <div className="flex flex-col gap-3 text-sm">
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/magaf_formacao_digital?igsh=MXRuZ3E5ZDRuZTEycA%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 text-white/60 hover:text-[#E11D48] transition"
@@ -126,7 +126,7 @@ const FooterSection = () => {
               </a>
 
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1BCTMWJ5Rt/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 text-white/60 hover:text-[#E11D48] transition"
