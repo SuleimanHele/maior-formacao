@@ -15,65 +15,64 @@ const WHATSAPP_LINK =
 
 const FooterSection = () => {
   return (
-    <footer className="relative overflow-hidden bg-surface-dark py-20">
+    <footer className="relative overflow-hidden bg-[#0B0F1A] py-20">
 
-      {/* GLOW BACKGROUND */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 blur-[140px] rounded-full" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/10 blur-[160px] rounded-full" />
+      {/* GLOW */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#E11D48]/10 blur-[140px] rounded-full" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#E11D48]/10 blur-[160px] rounded-full" />
 
-      <div className="container relative z-10">
+      <div className="container max-w-[1280px] mx-auto px-6 relative z-10">
 
-        {/* TOP GRID - 4 COLUNAS */}
-        <div className="grid md:grid-cols-4 gap-10 mb-14">
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-14">
 
-          {/* COLUNA 1 - SOBRE */}
+          {/* COLUNA 1 */}
           <div>
             <img
               src={logoMagaf}
               alt="MAGAF"
-              className="h-10 object-contain mb-5 brightness-0 invert"
+              className="h-10 object-contain mb-5"
             />
 
-            <p className="text-surface-dark-foreground/70 leading-relaxed text-sm">
-              Centro de Formação Digital focado em transformar conhecimento em
-              resultados reais no mercado digital moderno.
+            <p className="text-white/60 text-[14px] leading-relaxed">
+              Centro de Formação Digital focado em transformar conhecimento em resultados reais no mercado digital moderno.
             </p>
 
-            <div className="mt-6 inline-flex items-center gap-2 text-primary text-sm font-medium">
+            <div className="mt-6 inline-flex items-center gap-2 text-[#E11D48] text-sm font-medium">
               <Sparkles className="h-4 w-4" />
-              Formação prática e moderna
+              Formação prática e orientada a resultados
             </div>
           </div>
 
-          {/* COLUNA 2 - LINKS */}
+          {/* COLUNA 2 */}
           <div>
-            <h4 className="text-white font-semibold mb-5">Links rápidos</h4>
+            <h4 className="text-white text-[16px] font-semibold mb-5">
+              Links rápidos
+            </h4>
 
-            <ul className="space-y-3 text-sm text-surface-dark-foreground/70">
-              <li className="hover:text-primary transition cursor-pointer">
-                Início
-              </li>
-              <li className="hover:text-primary transition cursor-pointer">
-                Formações
-              </li>
-              <li className="hover:text-primary transition cursor-pointer">
-                Formadores
-              </li>
-              <li className="hover:text-primary transition cursor-pointer">
-                FAQ
-              </li>
+            <ul className="space-y-3 text-sm text-white/60">
+              {["Início", "Formações", "Formadores", "FAQ"].map((item) => (
+                <li
+                  key={item}
+                  className="hover:text-[#E11D48] transition cursor-pointer"
+                >
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* COLUNA 3 - CONTACTOS */}
+          {/* COLUNA 3 */}
           <div>
-            <h4 className="text-white font-semibold mb-5">Contactos</h4>
+            <h4 className="text-white text-[16px] font-semibold mb-5">
+              Contactos
+            </h4>
 
-            <div className="space-y-4 text-sm text-surface-dark-foreground/70">
+            <div className="space-y-4 text-sm text-white/60">
 
               <a
                 href={WHATSAPP_LINK}
-                className="flex items-center gap-3 hover:text-primary transition"
+                className="flex items-center gap-3 hover:text-[#E11D48] transition"
               >
                 <Phone className="h-4 w-4" />
                 +244 936 351 564
@@ -86,16 +85,18 @@ const FooterSection = () => {
             </div>
           </div>
 
-          {/* COLUNA 4 - REDES SOCIAIS */}
+          {/* COLUNA 4 */}
           <div>
-            <h4 className="text-white font-semibold mb-5">Redes sociais</h4>
+            <h4 className="text-white text-[16px] font-semibold mb-5">
+              Redes sociais
+            </h4>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 text-sm">
 
               <a
                 href="https://instagram.com"
                 target="_blank"
-                className="flex items-center gap-3 text-surface-dark-foreground/70 hover:text-primary transition"
+                className="flex items-center gap-3 text-white/60 hover:text-[#E11D48] transition"
               >
                 <Instagram className="h-4 w-4" />
                 Instagram
@@ -104,7 +105,7 @@ const FooterSection = () => {
               <a
                 href="https://facebook.com"
                 target="_blank"
-                className="flex items-center gap-3 text-surface-dark-foreground/70 hover:text-primary transition"
+                className="flex items-center gap-3 text-white/60 hover:text-[#E11D48] transition"
               >
                 <Facebook className="h-4 w-4" />
                 Facebook
@@ -113,7 +114,7 @@ const FooterSection = () => {
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
-                className="flex items-center gap-3 text-green-400 hover:text-green-300 transition"
+                className="flex items-center gap-3 text-[#E11D48] hover:opacity-80 transition"
               >
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp
@@ -123,14 +124,14 @@ const FooterSection = () => {
         </div>
 
         {/* CTA BAR */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 rounded-2xl border border-white/10 bg-white/5 p-6">
 
           <div>
-            <h3 className="text-white font-semibold text-lg">
+            <h3 className="text-white text-[18px] font-semibold">
               Pronto para começar a sua formação?
             </h3>
 
-            <p className="text-sm text-surface-dark-foreground/60">
+            <p className="text-white/60 text-sm">
               Fale connosco e garanta a sua vaga hoje mesmo.
             </p>
           </div>
@@ -138,7 +139,7 @@ const FooterSection = () => {
           <a
             href={WHATSAPP_LINK}
             target="_blank"
-            className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 font-semibold text-white shadow-lg shadow-primary/20 hover:scale-[1.02] transition"
+            className="inline-flex items-center gap-2 rounded-full bg-[#E11D48] px-6 py-3 font-semibold text-white hover:translate-y-[-2px] transition"
           >
             <MessageCircle className="h-5 w-5" />
             Falar no WhatsApp
@@ -147,7 +148,7 @@ const FooterSection = () => {
         </div>
 
         {/* BOTTOM */}
-        <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-surface-dark-foreground/40">
+        <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-white/40">
           © {new Date().getFullYear()} MAGAF. Todos os direitos reservados.
         </div>
       </div>

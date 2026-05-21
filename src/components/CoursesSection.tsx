@@ -4,7 +4,6 @@ import paginaWebImg from "@/assets/paginaweb.png";
 import {
   ArrowRight,
   Brain,
-  Globe,
   MessageCircle,
   Sparkles,
   Target,
@@ -17,86 +16,54 @@ const formations = [
   {
     id: 1,
     title: "Tráfego Pago + Importação + IA",
-
     description:
       "Aprenda vendas online, Meta Ads, importação e IA aplicada aos negócios.",
-
     image: trafegoPagoImg,
-
     icon: Target,
-
-    features: [
-      "Meta Ads",
-      "WhatsApp Vendas",
-      "Importação",
-      "Estratégias de Conversão",
-    ],
-
+    features: ["Meta Ads", "WhatsApp", "Importação", "Conversão"],
     link: trafficLink,
-
-    button: "Ver Formação",
   },
-
   {
     id: 2,
     title: "Criação de Websites com IA",
-
     description:
       "Aprenda a criar websites e aplicações modernas usando Inteligência Artificial.",
-
     image: paginaWebImg,
-
     icon: Brain,
-
-    features: [
-      "Websites Modernos",
-      "Automação",
-      "Ferramentas IA",
-      "Aplicações Inteligentes",
-    ],
-
+    features: ["Websites", "Automação", "IA Tools", "Apps"],
     link: aiLink,
-
-    button: "Ver Formação",
   },
 ];
 
 const CoursesSection = () => {
   return (
-    <section
-      id="formacoes"
-      className="relative overflow-hidden py-24 bg-background"
-    >
+    <section className="relative overflow-hidden py-24 bg-white">
 
-      {/* BACKGROUND GLOW */}
+      {/* GLOW CONTROLADO */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-red-600/10 blur-[140px] rounded-full" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-600/10 blur-[160px] rounded-full" />
 
-      <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 blur-[120px] rounded-full" />
-
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/10 blur-[140px] rounded-full" />
-
-      <div className="container relative z-10">
+      <div className="container max-w-[1280px] mx-auto px-6 relative z-10">
 
         {/* HEADER */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
 
-        <div className="text-center max-w-3xl mx-auto mb-20">
-
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary mb-6">
+          <div className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-4 py-2 text-sm font-medium text-red-600 mb-5">
             <Sparkles className="h-4 w-4" />
-            Formações Profissionais
+            Formações MAGAF
           </div>
 
-          <h2 className="font-heading text-4xl md:text-6xl font-black text-foreground mb-6">
-            Nossas <span className="text-primary">Formações</span>
+          <h2 className="text-[34px] md:text-[52px] font-bold text-[#0B0B0B] mb-4">
+            Nossas <span className="text-[#E10600]">Formações</span>
           </h2>
 
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            Formações práticas, modernas e focadas no mercado digital actual.
+          <p className="text-[16px] md:text-[18px] text-[#4B4B4B]">
+            Formação prática, moderna e focada em resultados reais no mercado digital.
           </p>
         </div>
 
         {/* CARDS */}
-
-        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
           {formations.map((formation) => {
             const Icon = formation.icon;
@@ -107,93 +74,71 @@ const CoursesSection = () => {
                 href={formation.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative overflow-hidden rounded-[28px] border border-border/50 bg-card/80 backdrop-blur-xl shadow-[0_15px_50px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_70px_rgba(255,0,0,0.12)] transition-all duration-500 hover:-translate-y-2"
+                className="
+                  group relative overflow-hidden
+                  bg-white
+                  border border-[#E5E5E5]
+                  rounded-2xl
+                  transition-all duration-300
+                  hover:-translate-y-1
+                  hover:border-red-300
+                  hover:shadow-xl
+                "
               >
 
-                {/* HOVER EFFECT */}
-
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-primary/10 via-transparent to-transparent" />
-
                 {/* IMAGE */}
-
-                <div className="relative overflow-hidden rounded-t-[28px]">
-
-                  {/* BADGE */}
-
-                  <div className="absolute top-5 right-5 z-20 flex items-center gap-2 rounded-full border border-white/10 bg-black/40 backdrop-blur-md px-4 py-2 text-xs font-semibold text-white">
-                    <Globe className="h-4 w-4" />
-                    Formação Premium
-                  </div>
-
-                  {/* IMAGE */}
+                <div className="relative h-[200px] overflow-hidden">
 
                   <img
                     src={formation.image}
                     alt={formation.title}
-                    className="h-[220px] w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
                   />
 
-                  {/* OVERLAY */}
+                  <div className="absolute inset-0 bg-black/40" />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-
-                  {/* ICON */}
-
-                  <div className="absolute bottom-5 left-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-white shadow-2xl shadow-primary/30">
-
-                    <Icon className="h-7 w-7" />
+                  <div className="absolute bottom-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E10600] text-white shadow-lg">
+                    <Icon className="h-5 w-5" />
                   </div>
                 </div>
 
                 {/* CONTENT */}
+                <div className="p-6">
 
-                <div className="relative z-10 p-6 md:p-7">
-
-                  <h3 className="font-heading text-2xl md:text-3xl font-black text-card-foreground leading-tight mb-4">
+                  <h3 className="text-[20px] font-semibold text-[#0B0B0B] mb-2">
                     {formation.title}
                   </h3>
 
-                  <p className="text-muted-foreground leading-relaxed mb-7">
+                  <p className="text-[14px] text-[#4B4B4B] mb-5 leading-relaxed">
                     {formation.description}
                   </p>
 
                   {/* FEATURES */}
-
-                  <div className="flex flex-wrap gap-3 mb-8">
-
-                    {formation.features.map((feature) => (
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {formation.features.map((f) => (
                       <span
-                        key={feature}
-                        className="rounded-full border border-primary/10 bg-primary/5 px-4 py-2 text-sm font-medium text-primary"
+                        key={f}
+                        className="text-xs px-3 py-1 rounded-full bg-[#F5F5F5] text-[#0B0B0B] border border-[#E5E5E5]"
                       >
-                        {feature}
+                        {f}
                       </span>
                     ))}
                   </div>
 
-                  {/* BUTTONS */}
-
+                  {/* CTA */}
                   <div className="flex items-center justify-between">
 
-                    <button className="inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-3 font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-[1.02]">
+                    <span className="text-[#E10600] font-medium text-sm">
+                      Ver formação
+                    </span>
 
-                      <MessageCircle
-                        className="h-5 w-5"
-                        fill="currentColor"
-                      />
-
-                      {formation.button}
-                    </button>
-
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-border bg-background/80 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                      <ArrowRight className="h-5 w-5" />
+                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#E10600] text-white group-hover:translate-x-1 transition">
+                      <ArrowRight className="h-4 w-4" />
                     </div>
+
                   </div>
+
                 </div>
-
-                {/* PREMIUM BORDER */}
-
-                <div className="absolute inset-[1px] rounded-[27px] border border-white/5 pointer-events-none" />
               </a>
             );
           })}
