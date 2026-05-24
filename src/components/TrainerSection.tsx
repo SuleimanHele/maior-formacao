@@ -91,11 +91,11 @@ const trainers: Trainer[] = [
   {
     id: 2,
     name: "Suleiman Hele",
-    role: "Especialista em Inteligência Artificial e Desenvolvimento Digital",
+    role: "Engenheiro Informático especializado em Desenvolvimento de Websites profissionais e soluções web modernas",
     image: secondTrainerImg,
 
     description:
-      "Engenheiro Informático formado em Cuba 🇨🇺, especialista em desenvolvimento web, Docker, infraestrutura Linux/VPS e Inteligência Artificial aplicada. Trabalha no desenvolvimento de soluções digitais modernas e na formação de alunos para criação de websites profissionais com IA, de forma prática, estratégica e voltada ao mercado atual.",
+      "Engenheiro Informático formado em Cuba 🇨🇺, especialista em desenvolvimento web e Inteligência Artificial aplicada. Trabalha no desenvolvimento de soluções digitais modernas e na formação de alunos para criação de websites profissionais com IA, de forma prática, estratégica e voltada ao mercado atual.",
     quote:
       "A Inteligência Artificial está a transformar os negócios digitais modernos.",
 
