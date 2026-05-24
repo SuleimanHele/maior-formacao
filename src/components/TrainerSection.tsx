@@ -48,7 +48,7 @@ type Trainer = {
 const trainers: Trainer[] = [
   {
     id: 1,
-    name: "Gaspar Manuel",
+    name: "Gaspar Manuel C.O",
     role: "Especialista em Gestão, Marketing Digital e Tráfego Pago",
     image: gasparsImg,
 
