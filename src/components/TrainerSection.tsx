@@ -88,45 +88,48 @@ const trainers: Trainer[] = [
     },
   },
 
-  {
-    id: 2,
-    name: "Suleiman Hele",
-    role: "Engenheiro Informático especializado em Desenvolvimento de Websites profissionais e soluções web modernas",
-    image: secondTrainerImg,
+ {
+  id: 2,
+  name: "Suleiman Hele",
+  role: "Engenheiro Informático especializado em Desenvolvimento de Websites profissionais e soluções web modernas",
 
-    description:
-      "Engenheiro Informático formado em Cuba 🇨🇺, especialista em desenvolvimento web e Inteligência Artificial aplicada. Trabalha no desenvolvimento de soluções digitais modernas e na formação de alunos para criação de websites profissionais com IA, de forma prática, estratégica e voltada ao mercado atual.",
-    quote:
-      "A Inteligência Artificial está a transformar os negócios digitais modernos.",
+  image: secondTrainerImg,
 
-    bio: "Especialista em Inteligência Artificial, automação e desenvolvimento digital. Trabalha com criação de websites, aplicações modernas e soluções digitais inteligentes.",
+  description:
+    "Engenheiro Informático formado em Cuba 🇨🇺, especializado em desenvolvimento de websites profissionais, Inteligência Artificial aplicada e automação de processos digitais. Atua na criação de soluções web modernas, escaláveis e orientadas para resultados reais no mercado digital.",
 
-    skills: [
-      "Inteligência Artificial",
-      "Automação",
-      "Desenvolvimento Web",
-      "UI/UX",
-      "No-Code",
-      "Ferramentas IA",
-    ],
+  quote:
+    "Criar websites hoje não é apenas programar — é combinar tecnologia, design e inteligência artificial para gerar resultados reais.",
 
-    results: [
-      "Soluções digitais modernas",
-      "Automação de processos",
-      "Projectos criados com IA",
-    ],
+  bio:
+    "Engenheiro Informático com foco em desenvolvimento web moderno, Inteligência Artificial e automação digital. Atua na criação de websites profissionais, landing pages de alta conversão e soluções digitais inteligentes. Experiência prática em transformar ideias em produtos digitais funcionais e escaláveis, utilizando tecnologias modernas como ferramentas de IA, no-code/low-code e boas práticas de UI/UX.",
 
-    portfolio: "https://suleimanhele.magaf.org/",
+  skills: [
+    "Desenvolvimento Web Profissional",
+    "Inteligência Artificial Aplicada",
+    "UI/UX Design Moderno",
+    "Automação de Processos",
+    "No-Code / Low-Code",
+    "Criação de Landing Pages de Alta Conversão",
+    "Integração de Ferramentas Web",
+  ],
 
-    socials: {
-      facebook: "https://www.facebook.com/suleimanhele.suleiman/",
+  results: [
+    "Desenvolvimento de websites modernos e responsivos",
+    "Criação de soluções digitais automatizadas",
+    "Projetos web com integração de Inteligência Artificial",
+    "Formação prática de alunos em desenvolvimento web",
+  ],
 
-      instagram: "https://instagram.com",
+  portfolio: "https://suleimanhele.magaf.org/",
 
-      whatsapp:
-        "https://wa.me/244930143035?text=Olá! Quero falar com Suleiman Hele.",
-    },
+  socials: {
+    facebook: "https://www.facebook.com/suleimanhele.suleiman/",
+    instagram: "https://instagram.com",
+    whatsapp:
+      "https://wa.me/244930143035?text=Olá! Quero falar com Suleiman Hele.",
   },
+},
 ];
 
 /**
