@@ -95,8 +95,7 @@ const trainers: Trainer[] = [
     image: secondTrainerImg,
 
     description:
-      "Especializado em ferramentas de IA, automação e criação de soluções digitais modernas para empresas e profissionais.",
-
+      "Engenheiro Informático formado em Cuba 🇨🇺, especialista em desenvolvimento web, Docker, infraestrutura Linux/VPS e Inteligência Artificial aplicada. Trabalha no desenvolvimento de soluções digitais modernas e na formação de alunos para criação de websites profissionais com IA, de forma prática, estratégica e voltada ao mercado atual.",
     quote:
       "A Inteligência Artificial está a transformar os negócios digitais modernos.",
 

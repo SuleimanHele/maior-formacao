@@ -7,6 +7,7 @@ import {
   MessageCircle,
   Sparkles,
   ArrowRight,
+  Monitor,
 } from "lucide-react";
 
 import type { LucideIcon } from "lucide-react";
@@ -67,23 +68,28 @@ const cards: ScheduleCard[] = [
     ],
   },
 
-  {
-    id: 3,
-    title: "Suporte aos Alunos",
-    icon: Headphones,
-    items: [
-      {
-        label: "Dias",
-        value: "Segunda até Quinta",
-        icon: Headphones,
-      },
-      {
-        label: "Horário",
-        value: "10H às 15H",
-        icon: Clock3,
-      },
-    ],
-  },
+ {
+  id: 3,
+  title: "Suporte aos Alunos",
+  icon: Headphones,
+  items: [
+    {
+      label: "Dias",
+      value: "Segunda até Quinta",
+      icon: Headphones,
+    },
+    {
+      label: "Horário",
+      value: "10H às 15H",
+      icon: Clock3,
+    },
+    {
+      label: "Modalidade",
+      value: "Presencial e Online",
+      icon: Monitor, // ou Monitor / Laptop dependendo do teu design system
+    },
+  ],
+}
 ];
 
 const ScheduleSection = () => {
