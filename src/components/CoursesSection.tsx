@@ -1,5 +1,5 @@
-import trafegoPagoImg from "@/assets/trafegopago.png";
-import paginaWebImg from "@/assets/paginaweb.png";
+import trafegoPagoImg from "@/assets/cursotrafego.jpeg";
+import paginaWebImg from "@/assets/cursoweb.jpeg";
 
 import {
   ArrowRight,
