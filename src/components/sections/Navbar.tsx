@@ -17,27 +17,32 @@ const navLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  // 👇 removemos "Início" apenas no mobile
+  const mobileNavLinks = navLinks.filter((link) => link.name !== "Início");
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container flex items-center justify-between h-16">
 
-        {/* LOGO (sem navegação) */}
+        {/* LOGO (sem navegação para evitar sair da página) */}
         <div className="flex items-center gap-3">
-          <img
-            src={logoMagaf}
-            alt="MAGAF"
-            className="h-10 w-10 object-contain rounded-md"
-          />
+          <Link to="#" className="flex items-center gap-3">
+            <img
+              src={logoMagaf}
+              alt="MAGAF"
+              className="h-10 w-10 object-contain rounded-md"
+            />
 
-          <div className="leading-tight">
-            <div className="font-heading text-base font-bold text-secondary">
-              MAGAF
-            </div>
+            <div className="leading-tight">
+              <div className="font-heading text-base font-bold text-secondary">
+                MAGAF
+              </div>
 
-            <div className="text-[9px] font-medium text-muted-foreground tracking-wider uppercase">
-              Centro de Formação Digital
+              <div className="text-[9px] font-medium text-muted-foreground tracking-wider uppercase">
+                Centro de Formação Digital
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* DESKTOP MENU */}
@@ -52,7 +57,6 @@ const Navbar = () => {
             Voltar ao site
           </Link>
 
-          {/* LINKS */}
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -98,19 +102,17 @@ const Navbar = () => {
               Voltar ao site
             </Link>
 
-            {/* LINKS (SEM "INÍCIO") */}
-            {navLinks
-              .filter((link) => link.name !== "Início")
-              .map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-foreground/70 hover:text-primary transition"
-                >
-                  {link.name}
-                </a>
-              ))}
+            {/* 👇 MOBILE SEM "INÍCIO" */}
+            {mobileNavLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium text-foreground/70 hover:text-primary transition"
+              >
+                {link.name}
+              </a>
+            ))}
 
             {/* CTA MOBILE */}
             <a
@@ -121,7 +123,6 @@ const Navbar = () => {
             >
               Inscrever-se agora
             </a>
-
           </div>
         </div>
       )}

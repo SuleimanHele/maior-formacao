@@ -128,7 +128,7 @@ const CoursesSection = () => {
                       onClick={() => navigate(`/courses/${formation.slug}`)}
                       className="w-full border border-gray-300 text-gray-700 py-3 rounded-xl font-medium hover:bg-gray-100 transition"
                     >
-                      Ver Formação Completa
+                      Ver Pagina
                     </button>
 
                   </div>
