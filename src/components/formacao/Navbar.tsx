@@ -2,9 +2,6 @@ import logoMagaf from "@/assets/logo-magaf.jpg";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-const WHATSAPP_LINK =
-  "https://wa.me/244936351564?text=Olá! Quero saber mais sobre a formação da MAGAF.";
-
 const navItems = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
@@ -21,31 +18,27 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container flex items-center justify-between h-16">
 
-        
         {/* LOGO */}
-<a href="#inicio" className="flex items-center gap-3">
-  
-  <img
-    src={logoMagaf}
-    alt="MAGAF"
-    className="h-10 object-contain"
-  />
+        <a href="#inicio" className="flex items-center gap-3">
+          <img
+            src={logoMagaf}
+            alt="MAGAF"
+            className="h-10 object-contain"
+          />
 
-  <div className="leading-tight">
-    <div className="font-display text-base font-bold text-secondary">
-      MAGAF
-    </div>
+          <div className="leading-tight">
+            <div className="font-display text-base font-bold text-secondary">
+              MAGAF
+            </div>
 
-    <div className="text-[9px] font-medium text-muted-foreground tracking-wider uppercase">
-      Centro de Formação Digital
-    </div>
-  </div>
-
-</a>
+            <div className="text-[9px] font-medium text-muted-foreground tracking-wider uppercase">
+              Centro de Formação Digital
+            </div>
+          </div>
+        </a>
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex items-center gap-8">
-
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -55,16 +48,6 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-
-          {/* CTA PRINCIPAL */}
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/20 hover:scale-[1.03] transition"
-          >
-            Inscrever-se
-          </a>
         </div>
 
         {/* MOBILE TOGGLE */}
@@ -91,16 +74,6 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-
-            {/* MOBILE CTA */}
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground text-center"
-            >
-              Inscrever-se agora
-            </a>
 
           </div>
         </div>
