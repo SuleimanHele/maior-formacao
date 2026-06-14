@@ -60,31 +60,7 @@ const CTASection = () => {
           </div>
 
           {/* BUTTONS */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-
-            {/* PRIMARY CTA */}
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#E10600] px-10 py-4 text-lg font-bold text-white shadow-lg shadow-[#E10600]/20 transition-all duration-300 hover:scale-[1.03] hover:bg-[#B80000]"
-            >
-              Quero garantir a minha vaga
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </a>
-
-            {/* SECONDARY CTA */}
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 rounded-full border border-border bg-background px-10 py-4 text-lg font-bold text-foreground transition-all duration-300 hover:bg-muted"
-            >
-              <MessageCircle className="h-5 w-5" />
-              Falar no WhatsApp
-            </a>
-
-          </div>
+          
 
           {/* URGENCY */}
           <div className="mt-10 flex justify-center">

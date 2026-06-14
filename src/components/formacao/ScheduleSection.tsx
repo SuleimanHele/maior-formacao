@@ -250,67 +250,7 @@ const ScheduleSection = () => {
 
           </div>
 
-        </div>
-
-        {/* CTA */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-
-          {/* PRIMARY */}
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              inline-flex items-center justify-center gap-2
-              rounded-full
-              bg-[#E10600]
-              px-7 py-3
-              text-sm font-semibold text-white
-              shadow-lg shadow-[#E10600]/20
-              transition-all duration-300
-              hover:bg-[#B80000]
-              hover:scale-[1.02]
-            "
-          >
-
-            <MessageCircle
-              className="h-4 w-4"
-              fill="currentColor"
-            />
-
-            Garantir minha vaga
-
-            <ArrowRight className="h-4 w-4" />
-
-          </a>
-
-          {/* SECONDARY */}
-          <a
-            href={WHATSAPP_BOOKING}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              inline-flex items-center justify-center gap-2
-              rounded-full
-              border border-[#E10600]
-              bg-white
-              px-7 py-3
-              text-sm font-semibold text-[#E10600]
-              transition-all duration-300
-              hover:bg-[#E10600]
-              hover:text-white
-            "
-          >
-
-            <CalendarDays className="h-4 w-4" />
-
-            Fazer marcação
-
-            <ArrowRight className="h-4 w-4" />
-
-          </a>
-
-        </div>
+        </div>        
 
       </div>
     </section>

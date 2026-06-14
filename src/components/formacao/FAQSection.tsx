@@ -12,28 +12,28 @@ import {
 
 const faqs = [
   {
-    q: "Preciso ter experiência em marketing digital?",
-    a: "Não. A formação começa do zero e foi desenhada para qualquer pessoa, mesmo sem conhecimento prévio.",
+    q: "Como funciona o processo de inscrição?",
+    a: "Escolhes a formação, clicas em 'Inscrever-se' e finalizas o pagamento. Depois recebes automaticamente a confirmação e instruções de acesso.",
   },
   {
-    q: "A formação é prática?",
-    a: "Sim. Vais aprender criando campanhas reais, anúncios e estratégias usadas no mercado atual.",
+    q: "Depois de pagar, como tenho acesso à formação?",
+    a: "Após o pagamento, a nossa equipa entra em contacto contigo via WhatsApp para te integrar no grupo e enviar todos os detalhes da formação.",
   },
   {
-    q: "Vou ter acompanhamento?",
-    a: "Sim. Os alunos recebem suporte contínuo durante a formação e acompanhamento no processo de implementação.",
+    q: "As formações são presenciais ou online?",
+    a: "Depende do curso. Algumas formações são online e outras presenciais no Kilamba - G27 Apartamento 02. Está sempre indicado em cada curso.",
   },
   {
-    q: "As aulas são presenciais?",
-    a: "Sim. As formações acontecem presencialmente no Kilamba — G27 Apartamento 02.",
+    q: "Preciso de experiência para começar?",
+    a: "Não. As formações foram criadas para iniciantes e também para quem já tem experiência e quer evoluir no digital.",
   },
   {
-    q: "Receberei certificado?",
-    a: "Sim. Todos os participantes recebem certificado no final da formação.",
+    q: "Vou receber certificado?",
+    a: "Sim. Todos os participantes recebem certificado de conclusão no final da formação.",
   },
   {
-    q: "Posso começar sem computador?",
-    a: "Sim. Mesmo sem computador é possível começar e nós mostramos alternativas práticas durante a formação.",
+    q: "O que está incluído na formação?",
+    a: "Inclui aulas práticas, suporte durante o processo, acesso a materiais de apoio e grupo exclusivo de alunos para acompanhamento.",
   },
 ];
 

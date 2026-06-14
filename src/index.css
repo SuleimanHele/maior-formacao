@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* =====================
+       MAGAF DESIGN SYSTEM
+    ====================== */
+
+    --background: 0 0% 96%;
     --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
@@ -15,46 +19,45 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 8%;
 
-    --primary: 0 85% 46%;
+    /* PRIMARY MAGAF (VERMELHO #ED111D) */
+    --primary: 356 87% 49%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 8%;
+    --primary-hover: 356 90% 43%;
+
+    /* SECONDARY */
+    --secondary: 0 0% 0%;
     --secondary-foreground: 0 0% 100%;
 
+    /* TEXT */
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted-foreground: 220 9% 35%;
 
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 8%;
+    /* BORDER */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 356 87% 49%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* ALERTS */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 85% 46%;
-
+    /* RADIUS SYSTEM */
     --radius: 0.75rem;
 
+    /* WHATSAPP */
     --whatsapp: 142 70% 40%;
     --whatsapp-foreground: 0 0% 100%;
 
-    --surface-dark: 0 0% 6%;
-    --surface-dark-foreground: 0 0% 95%;
-
-    --font-heading: 'Space Grotesk', sans-serif;
-    --font-body: 'Inter', sans-serif;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* FONTS */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
   }
 }
+
+/* =====================
+   BASE STYLES
+===================== */
 
 @layer base {
   * {
@@ -70,32 +73,32 @@
   }
 }
 
+/* =====================
+   UTILITIES
+===================== */
+
 @layer utilities {
   .font-heading {
     font-family: var(--font-heading);
   }
+
   .font-body {
     font-family: var(--font-body);
   }
 }
 
+/* =====================
+   ANIMATIONS
+===================== */
+
 html {
   scroll-behavior: smooth;
 }
+
 @keyframes shine {
   0% {
     transform: translateX(-120%);
   }
-
-  100% {
-    transform: translateX(120%);
-  }
-}
-@keyframes shine {
-  0% {
-    transform: translateX(-120%);
-  }
-
   100% {
     transform: translateX(120%);
   }

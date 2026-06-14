@@ -1,15 +1,15 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import TrainerSection from "@/components/TrainerSection";
-import CoursesSection from "@/components/CoursesSection";
-import DifferentialsSection from "@/components/DifferentialsSection";
-import ResultsSection from "@/components/ResultsSection";
-import ScheduleSection from "@/components/ScheduleSection";
-import FAQSection from "@/components/FAQSection";
-import CTASection from "@/components/CTASection";
-import ContactSection from "@/components/ContactSection";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import Navbar from "@/components/formacao/Navbar";
+import HeroSection from "@/components/formacao/HeroSection";
+import AboutSection from "@/components/formacao/AboutSection";
+import TrainerSection from "@/components/formacao/TrainerSection";
+import CoursesSection from "@/components/formacao/CoursesSection";
+import DifferentialsSection from "@/components/formacao/DifferentialsSection";
+import ResultsSection from "@/components/formacao/ResultsSection";
+import ScheduleSection from "@/components/formacao/ScheduleSection";
+import FAQSection from "@/components/formacao/FAQSection";
+import CTASection from "@/components/formacao/CTASection";
+import ContactSection from "@/components/formacao/ContactSection";
+import WhatsAppButton from "@/components/formacao/WhatsAppButton";
 
 const Index = () => {
   return (

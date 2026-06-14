@@ -48,12 +48,12 @@ type Trainer = {
 const trainers: Trainer[] = [
   {
     id: 1,
-    name: "Gaspar Manuel C.O",
+    name: "Gaspar Manuel CEO",
     role: "Especialista em Gestão, Marketing Digital e Tráfego Pago",
     image: gasparsImg,
 
     description:
-      "Ajuda empreendedores e negócios a aumentarem vendas usando estratégias digitais modernas, tráfego pago e posicionamento online.",
+      "Formador Digital e fundador da MAGAF – Centro de Formação Digital.Atua na capacitação de particulares e empresas, ajudando mensalmente mais de 100 pessoas a iniciarem ou desenvolverem a sua presença no digital. Com uma abordagem prática e orientada para resultados, combina experiência em execução, capacidade de ensino e visão estratégica de negócio, tornando-se uma referência em crescimento no ecossistema digital angolano.",
 
     quote:
       "Não basta aprender marketing digital. É preciso saber aplicar para gerar vendas.",

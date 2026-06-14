@@ -21,14 +21,27 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container flex items-center justify-between h-16">
 
+        
         {/* LOGO */}
-        <a href="#inicio" className="flex items-center">
-          <img
-            src={logoMagaf}
-            alt="MAGAF"
-            className="h-10 object-contain"
-          />
-        </a>
+<a href="#inicio" className="flex items-center gap-3">
+  
+  <img
+    src={logoMagaf}
+    alt="MAGAF"
+    className="h-10 object-contain"
+  />
+
+  <div className="leading-tight">
+    <div className="font-display text-base font-bold text-secondary">
+      MAGAF
+    </div>
+
+    <div className="text-[9px] font-medium text-muted-foreground tracking-wider uppercase">
+      Centro de Formação Digital
+    </div>
+  </div>
+
+</a>
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex items-center gap-8">

@@ -19,32 +19,26 @@ const HeroSection = () => {
         pt-16 overflow-hidden bg-[#05070F]
       "
     >
-
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0">
-
         <img
           src={heroImg}
           alt="Formação MAGAF"
           className="w-full h-full object-cover opacity-35"
         />
 
-        {/* OVERLAY */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#05070F] via-[#05070F]/90 to-[#05070F]/40" />
-
-        {/* EXTRA DARK */}
         <div className="absolute inset-0 bg-black/30" />
-
       </div>
 
       {/* GLOWS */}
       <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-[#E10600]/15 blur-[180px] rounded-full" />
-
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#E10600]/10 blur-[160px] rounded-full" />
 
       <div className="container max-w-[1280px] mx-auto px-6 relative z-10 py-20">
-
-        <div className="max-w-3xl">
+        
+        {/* CONTAINER CENTRALIZADO */}
+        <div className="max-w-4xl mx-auto text-center">
 
           {/* BADGE */}
           <div
@@ -73,6 +67,7 @@ const HeroSection = () => {
               leading-[1.05]
               mb-6
               tracking-[-2px]
+              max-w-4xl mx-auto
             "
           >
             Domine o digital com formações práticas e{" "}
@@ -87,18 +82,17 @@ const HeroSection = () => {
               text-white/70
               text-lg md:text-xl
               leading-relaxed
-              max-w-2xl
+              max-w-2xl mx-auto
               mb-10
             "
           >
-            Formação prática em Tráfego Pago, Marketing Digital , Importação,
-             Inteligência Artificial e Criação de Websites com IA
-            para quem quer gerar resultados reais no mercado digital.
+            Formação prática em Tráfego Pago, Marketing Digital, Importação,
+            Inteligência Artificial e Criação de Websites com IA para quem quer
+            gerar resultados reais no mercado digital.
           </p>
 
           {/* TRUST POINTS */}
-          <div className="flex flex-wrap gap-4 mb-10">
-
+          <div className="flex flex-wrap justify-center gap-4 mb-10">
             {[
               "Formação prática",
               "Projectos reais",
@@ -121,77 +115,21 @@ const HeroSection = () => {
                 {item}
               </div>
             ))}
-
           </div>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4">
-
-            {/* PRIMARY CTA */}
-            <a
-              href="#turmas"
-              className="
-                group inline-flex items-center justify-center gap-3
-                rounded-full
-                bg-[#E10600]
-                px-8 py-4
-                text-base font-bold text-white
-                shadow-[0_10px_40px_rgba(225,6,0,0.35)]
-                transition-all duration-300
-                hover:bg-[#B80000]
-                hover:scale-[1.03]
-              "
-            >
-              Garantir minha vaga
-
-              <ArrowRight
-                className="
-                  h-5 w-5
-                  transition-transform
-                  group-hover:translate-x-1
-                "
-              />
-            </a>
-
-            {/* SECONDARY CTA */}
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                inline-flex items-center justify-center gap-3
-                rounded-full
-                border border-white/10
-                bg-white/5
-                backdrop-blur-md
-                px-8 py-4
-                text-base font-semibold text-white
-                transition-all duration-300
-                hover:bg-white/10
-                hover:border-white/20
-              "
-            >
-              <MessageCircle className="h-5 w-5" fill="currentColor" />
-              Falar no WhatsApp
-            </a>
-
-          </div>
+          
 
           {/* URGENCY */}
-          <div className="mt-10 flex items-center gap-3">
-
+          <div className="mt-10 flex items-center justify-center gap-3">
             <span className="relative flex h-3 w-3">
-
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E10600] opacity-75" />
-
               <span className="relative inline-flex h-3 w-3 rounded-full bg-[#E10600]" />
-
             </span>
 
             <p className="text-sm font-medium text-[#E10600]">
               Vagas limitadas para garantir acompanhamento individual
             </p>
-
           </div>
 
         </div>
