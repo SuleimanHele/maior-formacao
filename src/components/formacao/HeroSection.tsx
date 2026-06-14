@@ -55,7 +55,7 @@ const HeroSection = () => {
             "
           >
             <Sparkles className="h-4 w-4" />
-            Centro de Formação Digital
+            MAGAF
           </div>
 
           {/* TITLE */}
@@ -70,34 +70,50 @@ const HeroSection = () => {
               max-w-4xl mx-auto
             "
           >
-            Domine o digital com formações práticas e{" "}
+            Centro de Formação{" "}
             <span className="text-[#E10600]">
-              Inteligência Artificial
+              Digital
             </span>
           </h1>
 
-          {/* DESCRIPTION */}
-          <p
-            className="
-              text-white/70
-              text-lg md:text-xl
-              leading-relaxed
-              max-w-2xl mx-auto
-              mb-10
-            "
-          >
-            Formação prática em Tráfego Pago, Marketing Digital, Importação,
-            Inteligência Artificial e Criação de Websites com IA para quem quer
-            gerar resultados reais no mercado digital.
+          {/* SUBTITLE */}
+          <p className="text-lg md:text-xl text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Formação prática com{" "}
+            <strong className="text-white">acompanhamento personalizado</strong>
           </p>
+
+          {/* 4 COURSES HIGHLIGHT */}
+          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 mb-10 border border-white/10">
+            <p className="text-[#E10600] font-semibold mb-4 text-sm uppercase tracking-wide">
+              🎓 Escolha sua formação:
+            </p>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-white/80 font-medium">
+              <span className="flex items-center gap-2">
+                Tráfego Pago + Importação
+              </span>
+              
+              <span className="text-[#E10600]/30">•</span>
+              <span className="flex items-center gap-2">
+                Inteligência Artificial
+              </span>
+              <span className="text-[#E10600]/30">•</span>
+              <span className="flex items-center gap-2">
+                Websites com IA
+              </span>
+            </div>
+            <p className="text-xs text-white/40 mt-4">
+              ⚡ Escolha 1, 2, 3 ou todos os cursos — você monta seu pacote!
+            </p>
+          </div>
 
           {/* TRUST POINTS */}
           <div className="flex flex-wrap justify-center gap-4 mb-10">
             {[
-              "Formação prática",
-              "Projectos reais",
+              "Cursos 100% práticos",
+              "Projetos reais",
               "Suporte aos alunos",
-              "Mercado digital actual",
+              "Certificado incluso",
+              "Do zero ao avançado",
             ].map((item) => (
               <div
                 key={item}
@@ -117,8 +133,42 @@ const HeroSection = () => {
             ))}
           </div>
 
-          {/* CTA */}
-          
+          {/* CTA BUTTONS */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex items-center justify-center gap-2
+                bg-[#E10600] hover:bg-red-700
+                text-white font-bold
+                px-8 py-4 rounded-xl
+                transition-all duration-300
+                text-lg
+                shadow-lg shadow-red-900/20
+              "
+            >
+              <MessageCircle className="h-5 w-5" />
+              Quero me Inscrever
+            </a>
+
+            <a
+              href="#formacoes"
+              className="
+                inline-flex items-center justify-center gap-2
+                border-2 border-white/20
+                hover:border-[#E10600] hover:bg-[#E10600]/10
+                text-white font-bold
+                px-8 py-4 rounded-xl
+                transition-all duration-300
+                text-lg
+              "
+            >
+              Ver Todos os Cursos
+              <ArrowRight className="h-5 w-5" />
+            </a>
+          </div>
 
           {/* URGENCY */}
           <div className="mt-10 flex items-center justify-center gap-3">
@@ -126,9 +176,8 @@ const HeroSection = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E10600] opacity-75" />
               <span className="relative inline-flex h-3 w-3 rounded-full bg-[#E10600]" />
             </span>
-
             <p className="text-sm font-medium text-[#E10600]">
-              Vagas limitadas para garantir acompanhamento individual
+              Vagas limitadas por turma — garantir acompanhamento individual
             </p>
           </div>
 

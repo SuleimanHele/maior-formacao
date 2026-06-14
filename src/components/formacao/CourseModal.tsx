@@ -9,7 +9,7 @@ interface Course {
   duration: string;
   mode: string;
   schedule: string;
-  day: string; // ← adicionar esta linha
+  day: string;
   audience: string;
   price: string;
   registration: string;
@@ -30,7 +30,7 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
       <div className="h-full overflow-y-auto">
         <div className="min-h-full flex items-center justify-center p-4 md:p-8">
 
-          <div className="relative bg-white rounded-[32px] overflow-hidden w-full max-w-6xl shadow-2xl grid lg:grid-cols-2">
+          <div className="relative bg-white rounded-[32px] overflow-hidden w-full max-w-4xl shadow-2xl">
 
             {/* FECHAR */}
             <button
@@ -39,15 +39,6 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
             >
               ✕
             </button>
-
-            {/* IMAGEM */}
-            <div className="h-[240px] sm:h-[320px] lg:h-full bg-gray-100 flex items-center justify-center p-4">
-              <img
-                src={course.image}
-                alt={course.title}
-                className="max-h-[520px] w-auto object-contain"
-              />
-            </div>
 
             {/* CONTEÚDO */}
             <div className="p-6 md:p-8 lg:p-10">
@@ -58,7 +49,7 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
               </h3>
 
               {/* DESCRIÇÃO */}
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-gray-600 leading-relaxed mb-8 whitespace-pre-line">
                 {course.fullDescription}
               </p>
 
@@ -73,24 +64,27 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
                   <p className="text-xs text-gray-500">Horário</p>
                   <p className="font-semibold">{course.schedule}</p>
                 </div>
-                 <div className="p-3 rounded-xl bg-gray-50">
-    <p className="text-xs text-gray-500">Dia</p>
-    <p className="font-semibold">{course.day}</p>
-  </div>
+                
+                <div className="p-3 rounded-xl bg-gray-50">
+                  <p className="text-xs text-gray-500">Dia</p>
+                  <p className="font-semibold">{course.day}</p>
+                </div>
 
-                <div className="p-3 rounded-xl bg-gray-50 col-span-2">
+                <div className="p-3 rounded-xl bg-gray-50">
                   <p className="text-xs text-gray-500">Modalidade</p>
                   <p className="font-semibold">{course.mode}</p>
                 </div>
               </div>
 
-              {/* PÚBLICO */}
-              <div className="mb-6">
-                <p className="text-xs text-gray-500 mb-1">Público-alvo</p>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  {course.audience}
-                </p>
-              </div>
+              {/* PÚBLICO-ALVO */}
+              {course.audience && (
+                <div className="mb-6">
+                  <p className="text-xs text-gray-500 mb-1">Público-alvo</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    {course.audience}
+                  </p>
+                </div>
+              )}
 
               {/* FEATURES */}
               <div className="flex flex-wrap gap-2 mb-8">
@@ -106,15 +100,17 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
 
               {/* PREÇO */}
               <div className="bg-gray-50 rounded-2xl p-6 mb-8">
-                <div className="flex justify-between mb-3">
-                  <span className="text-gray-500">Inscrição</span>
-                  <span className="font-bold text-[#E10600]">
-                    {course.registration}
-                  </span>
-                </div>
+                {course.registration && course.registration !== "" && (
+                  <div className="flex justify-between mb-3">
+                    <span className="text-gray-500">Inscrição</span>
+                    <span className="font-bold text-[#E10600]">
+                      {course.registration}
+                    </span>
+                  </div>
+                )}
 
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Formação</span>
+                <div className={`flex justify-between ${!course.registration || course.registration === "" ? "" : ""}`}>
+                  <span className="text-gray-500">Investimento Total</span>
                   <span className="text-3xl font-black text-[#E10600]">
                     {course.price}
                   </span>
@@ -131,7 +127,6 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
 
               {/* BOTÕES */}
               <div className="flex flex-col sm:flex-row gap-4">
-
                 <a
                   href={paymentLink}
                   target="_blank"
@@ -147,7 +142,6 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
                 >
                   Fechar
                 </button>
-
               </div>
 
             </div>

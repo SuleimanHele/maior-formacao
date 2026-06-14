@@ -58,7 +58,7 @@ const trainers: Trainer[] = [
     quote:
       "Não basta aprender marketing digital. É preciso saber aplicar para gerar vendas.",
 
-    bio: "Profissional com experiência em gestão estratégica, marketing digital, vendas online e tráfego pago. Especializado em ajudar negócios e empreendedores a crescer usando estratégias modernas e posicionamento digital.",
+    bio: "Formador Digital e fundador da MAGAF – Centro de Formação Digital. Atua na capacitação de particulares e empresas, ajudando mensalmente mais de 100 pessoas a iniciarem ou desenvolverem a sua presença no digital.",
 
     skills: [
       "Meta Ads",
