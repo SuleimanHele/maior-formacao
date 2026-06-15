@@ -5,7 +5,7 @@ import { Sparkles } from "lucide-react";
 import { formations, type Formation } from "../data/formations";
 import CourseModal from "./CourseModal";
 
-const paymentLink = "https://paygooo.goootrafego.com/";
+const paymentLink = "https://wa.me/244936351564?text=Olá! Quero saber mais sobre a formação da MAGAF.";
 
 const CoursesSection = () => {
   const [selectedCourse, setSelectedCourse] = useState<Formation | null>(null);

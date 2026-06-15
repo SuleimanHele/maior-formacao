@@ -49,7 +49,7 @@ const trainers: Trainer[] = [
   {
     id: 1,
     name: "Gaspar Manuel CEO",
-    role: "Especialista em Gestão, Marketing Digital e Tráfego Pago",
+    role: "Formador de Tráfego Pago, Marketing Digital e Inteligência Artificial ",
     image: gasparsImg,
 
     description:

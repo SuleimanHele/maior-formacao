@@ -36,7 +36,7 @@ export const formations: Formation[] = [
     duration: "1 dia",
     mode: "Presencial",
     schedule: "10H às 15H",
-    day: "Sábados",
+    day: "Sextas E Sábados",
     audience:
       "Empreendedores, jovens que querem renda extra, comerciantes e importadores, criadores de conteúdos, pessoas sem experiência e equipas de vendas",
     price: "20.000 Kz",
@@ -56,7 +56,7 @@ export const formations: Formation[] = [
     duration: "1 dia",
     mode: "Presencial",
     schedule: "10H às 15H",
-    day: "Sextas-feiras",
+    day: "Data a anunciar",
     audience:
       "Empreendedores, proprietários de lojas físicas, comerciantes, jovens que querem renda extra, profissionais de marketing e vendas, iniciantes no digital, freelancers e prestadores de serviços",
     price: "25.000 Kz",

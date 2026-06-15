@@ -1,6 +1,6 @@
 import React from "react";
 
-const paymentLink = "https://paygooo.goootrafego.com/";
+const paymentLink = "https://wa.me/244936351564?text=Olá! Quero saber mais sobre a formação da MAGAF.";
 
 interface Course {
   id: number;
