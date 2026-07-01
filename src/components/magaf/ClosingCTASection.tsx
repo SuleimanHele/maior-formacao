@@ -1,6 +1,6 @@
 const ClosingCTASection = () => {
-  const whatsappLink =
-    "https://wa.me/244936351564?text=Olá!%20Quero%20garantir%20a%20minha%20vaga%20na%20formação%20MAGAF";
+  const checkoutLink =
+    "https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6";
 
   return (
     <section className="relative py-16 sm:py-20 overflow-hidden bg-black">
