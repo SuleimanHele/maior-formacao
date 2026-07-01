@@ -136,7 +136,7 @@ const HeroSection = () => {
           {/* CTA BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={WHATSAPP_LINK}
+              href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
               target="_blank"
               rel="noopener noreferrer"
               className="

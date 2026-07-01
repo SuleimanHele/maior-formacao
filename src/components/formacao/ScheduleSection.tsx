@@ -12,8 +12,8 @@ import {
 
 import type { LucideIcon } from "lucide-react";
 
-const WHATSAPP_LINK =
-  "https://wa.me/244936351564?text=Olá! Quero garantir a minha vaga na formação da MAGAF.";
+const CHECKOUT_LINK =
+  "https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6";
 
 const WHATSAPP_BOOKING =
   "https://wa.me/244936351564?text=Olá! Quero fazer uma marcação para a formação da MAGAF.";
