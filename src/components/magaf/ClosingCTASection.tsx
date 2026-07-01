@@ -43,7 +43,7 @@ const ClosingCTASection = () => {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             {/* Botão Principal */}
             <a
-              href={whatsappLink}
+              href={checkoutLink}
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -87,7 +87,7 @@ const ClosingCTASection = () => {
 
             {/* Botão Secundário */}
             <a
-              href={whatsappLink}
+              href={checkoutLink}
               target="_blank"
               rel="noopener noreferrer"
               className="
