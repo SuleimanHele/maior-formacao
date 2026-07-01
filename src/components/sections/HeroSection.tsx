@@ -65,7 +65,7 @@ export function HeroSection() {
         {/* Botões CTA */}
         <div className="mt-6 flex flex-wrap gap-3 justify-center">
           <a
-            href={WHATSAPP_URL}
+            href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-gold to-yellow-500 px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-secondary transition-all hover:scale-105 hover:shadow-xl shadow-lg"
