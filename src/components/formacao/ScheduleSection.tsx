@@ -210,6 +210,29 @@ const ScheduleSection = () => {
 
         </div>
 
+        {/* CTA BUTTONS */}
+        <div className="text-center mb-10">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={CHECKOUT_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#E10600] px-10 py-4 text-lg font-semibold text-white hover:opacity-90 transition-opacity"
+            >
+              Garantir minha vaga
+            </a>
+            <a
+              href={WHATSAPP_BOOKING}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-[#E10600] px-10 py-4 text-lg font-semibold text-[#E10600] hover:bg-[#E10600] hover:text-white transition-colors"
+            >
+              <Calendar className="h-5 w-5" />
+              Fazer marcação
+            </a>
+          </div>
+        </div>
+
         {/* ALERT */}
         <div className="text-center mb-10">
 
