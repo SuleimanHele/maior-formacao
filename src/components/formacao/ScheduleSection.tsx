@@ -8,6 +8,7 @@ import {
   Sparkles,
   ArrowRight,
   Monitor,
+  Calendar,
 } from "lucide-react";
 
 import type { LucideIcon } from "lucide-react";
