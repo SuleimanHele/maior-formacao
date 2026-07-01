@@ -165,8 +165,10 @@ const HeroSection = () => {
               gap-4
             "
           >
-            <button
-              onClick={() => scrollToSection("#pricing")}
+            <a
+              href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 group
                 inline-flex
@@ -187,7 +189,7 @@ const HeroSection = () => {
             >
               Garantir Minha Vaga
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </button>
+            </a>
 
             <button
               onClick={() => scrollToSection("#modules")}
