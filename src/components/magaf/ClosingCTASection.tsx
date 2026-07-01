@@ -1,6 +1,6 @@
 const ClosingCTASection = () => {
-  const whatsappLink =
-    "https://wa.me/244936351564?text=Olá!%20Quero%20garantir%20a%20minha%20vaga%20na%20formação%20MAGAF";
+  const checkoutLink =
+    "https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6";
 
   return (
     <section className="relative py-16 sm:py-20 overflow-hidden bg-black">
@@ -43,7 +43,7 @@ const ClosingCTASection = () => {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             {/* Botão Principal */}
             <a
-              href={whatsappLink}
+              href={checkoutLink}
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -87,7 +87,7 @@ const ClosingCTASection = () => {
 
             {/* Botão Secundário */}
             <a
-              href={whatsappLink}
+              href={checkoutLink}
               target="_blank"
               rel="noopener noreferrer"
               className="

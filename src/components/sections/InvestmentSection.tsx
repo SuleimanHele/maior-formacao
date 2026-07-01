@@ -108,7 +108,7 @@ export function InvestmentSection() {
           </ul>
 
           <a
-            href={WHATSAPP_URL}
+            href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-7 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-red-600 py-4 text-base font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"

@@ -96,7 +96,7 @@ export default function Pricing() {
           </ul>
 
           <a
-            href={WHATSAPP_URL}
+            href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-7 flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-base font-bold text-primary transition-all hover:scale-[1.02]"

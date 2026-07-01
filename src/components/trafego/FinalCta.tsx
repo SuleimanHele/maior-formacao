@@ -36,7 +36,7 @@ export default function FinalCta() {
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
 
             <a
-              href={WHATSAPP_URL}
+              href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-base font-bold text-primary transition-transform hover:scale-105"

@@ -69,7 +69,7 @@ const Navbar = () => {
 
           {/* CTA */}
           <a
-            href={WHATSAPP_LINK}
+            href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/20 hover:scale-[1.03] transition"
@@ -116,7 +116,7 @@ const Navbar = () => {
 
             {/* CTA MOBILE */}
             <a
-              href={WHATSAPP_LINK}
+              href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground text-center"

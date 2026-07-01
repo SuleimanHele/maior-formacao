@@ -55,7 +55,9 @@ export default function Hero() {
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
 
             <a
-              href="#inscricao"
+              href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-transform hover:scale-[1.03]"
             >
               Quero Garantir Minha Vaga

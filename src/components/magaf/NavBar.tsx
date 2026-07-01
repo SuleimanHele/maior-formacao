@@ -66,7 +66,9 @@ export default function NavBar() {
 
         {/* CTA DESKTOP */}
         <a
-          href="#inscricao"
+          href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-bold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105 hover:bg-[#c5163d]"
         >
           <Zap className="h-3.5 w-3.5" />
@@ -111,7 +113,9 @@ export default function NavBar() {
 
             {/* CTA MOBILE */}
             <a
-              href="#inscricao"
+              href="https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-bold text-primary-foreground"
             >
