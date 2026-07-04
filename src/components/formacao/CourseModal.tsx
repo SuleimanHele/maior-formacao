@@ -13,6 +13,7 @@ interface Course {
   audience: string;
   price: string;
   registration: string;
+  homeTraining: string; // NOVO
   fullDescription: string;
   features: string[];
 }
@@ -99,23 +100,51 @@ const CourseModal = ({ course, onClose }: CourseModalProps) => {
               </div>
 
               {/* PREÇO */}
-              <div className="bg-gray-50 rounded-2xl p-6 mb-8">
-                {course.registration && course.registration !== "" && (
-                  <div className="flex justify-between mb-3">
-                    <span className="text-gray-500">Inscrição</span>
-                    <span className="font-bold text-[#E10600]">
-                      {course.registration}
-                    </span>
-                  </div>
-                )}
+              {/* PREÇO */}
+<div className="bg-gray-50 rounded-2xl p-6 mb-8 space-y-4">
 
-                <div className={`flex justify-between ${!course.registration || course.registration === "" ? "" : ""}`}>
-                  <span className="text-gray-500">Investimento Total</span>
-                  <span className="text-3xl font-black text-[#E10600]">
-                    {course.price}
-                  </span>
-                </div>
-              </div>
+  {course.registration && (
+    <div className="flex justify-between items-center">
+      <span className="text-gray-500">Inscrição</span>
+
+      <span className="font-bold text-[#E10600]">
+        {course.registration}
+      </span>
+    </div>
+  )}
+
+  <div className="flex justify-between items-center">
+    <span className="text-gray-500">Investimento</span>
+
+    <span className="text-3xl font-black text-[#E10600]">
+      {course.price}
+    </span>
+  </div>
+
+  <div className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+    <div className="flex items-start gap-3">
+      <span className="text-2xl">🏠</span>
+
+      <div>
+        <h4 className="font-semibold text-amber-700">
+          Formação ao Domicílio
+        </h4>
+
+        <p className="text-sm text-gray-600 mt-1">
+          Também realizamos esta formação nas instalações da sua empresa,
+          residência ou organização.
+
+          <br />
+
+          <span className="font-semibold text-amber-700">
+            Acréscimo de {course.homeTraining}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
               {/* BENEFÍCIOS */}
               <div className="space-y-2 mb-8 text-sm text-gray-700">

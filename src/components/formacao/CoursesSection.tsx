@@ -60,13 +60,34 @@ const CoursesSection = () => {
                     <h3 className="text-base font-bold text-white mb-1">
                       FORMAÇÃO COMPLETA PREMIUM
                     </h3>
-                    <div className="text-2xl font-bold text-white mb-1">
-                      60.000 Kz
-                    </div>
-                    
-                    <div className="inline-flex items-center gap-1 bg-yellow-400 text-black px-2 py-0.5 rounded-full text-xs font-semibold">
-                      ⭐ RECOMENDADO
-                    </div>
+                    <div className="text-2xl font-bold text-white mb-2">
+  {formation.price}
+</div>
+
+{formation.homeTraining && (
+  <div className="mx-auto mb-3 max-w-xs rounded-xl bg-white/15 backdrop-blur-sm border border-white/20 px-3 py-2">
+    <div className="flex items-center justify-center gap-2">
+      <span className="text-lg">🏠</span>
+
+      <div className="text-left">
+        <p className="text-[11px] font-semibold text-white">
+          Formação ao Domicílio
+        </p>
+
+        <p className="text-[10px] text-red-100">
+          Acréscimo de{" "}
+          <span className="font-bold text-yellow-300">
+            {formation.homeTraining}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+)}
+
+<div className="inline-flex items-center gap-1 bg-yellow-400 text-black px-3 py-1 rounded-full text-xs font-bold">
+  ⭐ RECOMENDADO
+</div>
                   </div>
 
                   {/* LISTA DE FEATURES */}
@@ -152,15 +173,43 @@ const CoursesSection = () => {
                   </div>
 
                   {/* PRICE */}
-                  <div className="mb-2">
-                    <p className="text-[9px] text-gray-500">Investimento</p>
-                    <p className="text-sm font-bold text-red-600">
-                      {formation.price}
-                    </p>
-                    <p className="text-[9px] text-gray-400">
-                      + {formation.registration} inscrição
-                    </p>
-                  </div>
+                  {/* PRICE */}
+<div className="mb-3">
+  <p className="text-[9px] uppercase tracking-wide text-gray-500">
+    Investimento
+  </p>
+
+  <p className="text-lg font-bold text-red-600">
+    {formation.price}
+  </p>
+
+  {formation.registration && (
+    <p className="text-[10px] text-gray-500">
+      Inscrição: <strong>{formation.registration}</strong>
+    </p>
+  )}
+
+  {formation.homeTraining && (
+    <div className="mt-2 rounded-lg border border-amber-200 bg-amber-50 px-2 py-2">
+      <div className="flex items-center gap-2">
+        <span className="text-sm">🏠</span>
+
+        <div>
+          <p className="text-[10px] font-semibold text-amber-700">
+            Formação ao Domicílio
+          </p>
+
+          <p className="text-[9px] text-gray-600">
+            Disponível com um valor adicional de{" "}
+            <span className="font-semibold text-amber-700">
+              {formation.homeTraining}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  )}
+</div>
 
                   {/* BUTTONS */}
                   <div className="flex gap-2">
