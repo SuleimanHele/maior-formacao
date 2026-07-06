@@ -11,7 +11,7 @@ const paymentLinks: Record<number, string> = {
   2: "https://paygooo.goootrafego.com/checkout/curso-gravado-ia",
   3: "https://paygooo.goootrafego.com/checkout/curso-gravado-websites",
   4: "https://paygooo.goootrafego.com/checkout/curso-gravado-premium",
-  5: "https://paygooo.goootrafego.com/checkout/curso-gravado-edicao-video",
+  5: "https://paygooo.goootrafego.com/checkout/f50e15b9-6816-4dd8-92d9-e41635a9652c",
 };
 
 const RecordedCoursesSection = () => {
