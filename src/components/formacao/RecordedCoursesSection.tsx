@@ -1,24 +1,25 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Video } from "lucide-react";
 
-import { formations, type Formation } from "../data/formations";
+import { recordedFormations, type Formation } from "../data/recordedFormations";
 import CourseModal from "./CourseModal";
 
-// Links de pagamento para cada curso presencial
+// Links de pagamento para cada curso gravado
 const paymentLinks: Record<number, string> = {
   1: "https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6",
-  2: "https://paygooo.goootrafego.com/checkout/c427e2ba-87db-4398-b1ef-54dbfb9334ff",
-  3: "https://paygooo.goootrafego.com/checkout/9edc9359-7870-4968-b431-b9270bb9ab97",
-  4: "https://paygooo.goootrafego.com/checkout/b66020ec-6e72-411f-bc86-c17970a9d3df",
+  2: "https://paygooo.goootrafego.com/checkout/curso-gravado-ia",
+  3: "https://paygooo.goootrafego.com/checkout/curso-gravado-websites",
+  4: "https://paygooo.goootrafego.com/checkout/curso-gravado-premium",
+  5: "https://paygooo.goootrafego.com/checkout/curso-gravado-edicao-video", // Link para edição de vídeo
 };
 
-const CoursesSection = () => {
+const RecordedCoursesSection = () => {
   const [selectedCourse, setSelectedCourse] = useState<Formation | null>(null);
   const navigate = useNavigate();
 
   return (
-    <section id="formacoes" className="relative overflow-hidden py-24 bg-white">
+    <section id="cursos-gravados" className="relative overflow-hidden py-24 bg-white">
       
       {/* BACKGROUND */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-red-600/10 blur-[140px] rounded-full" />
@@ -28,23 +29,23 @@ const CoursesSection = () => {
         
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-
-          <h2 className="text-[34px] md:text-[52px] font-bold text-[#0B0B0B] mb-4">
-            Nossas <span className="text-[#E10600]">Formações</span>
-          </h2>
           <div className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-4 py-2 text-sm font-medium text-red-600 mb-5">
-            <Sparkles className="h-4 w-4" />
-            Formações Presenciais
+            <Video className="h-4 w-4" />
+            Formações Online
           </div>
 
+          <h2 className="text-[34px] md:text-[52px] font-bold text-[#0B0B0B] mb-4">
+            Cursos <span className="text-[#E10600]">Gravados</span>
+          </h2>
+
           <p className="text-[16px] md:text-[18px] text-[#4B4B4B]">
-            Formação prática, moderna e focada em resultados reais no mercado digital.
+            Os mesmos cursos presenciais, agora em versão gravada para você assistir quando quiser.
           </p>
         </div>
 
         {/* CARDS - 2 POR LINHA */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {formations.map((formation) => {
+          {recordedFormations.map((formation) => {
             const Icon = formation.icon;
             const paymentLink = paymentLinks[formation.id] || "#";
 
@@ -65,8 +66,15 @@ const CoursesSection = () => {
                       MELHOR ESCOLHA
                     </div>
                     <h3 className="text-base font-bold text-white mb-1">
-                      FORMAÇÃO COMPLETA PREMIUM
+                      {formation.title}
                     </h3>
+                    
+                    {/* Badge de Curso Gravado */}
+                    <div className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold mb-2">
+                      <Video className="h-3 w-3" />
+                      VERSÃO GRAVADA
+                    </div>
+
                     <div className="text-2xl font-bold text-white mb-2">
                       {formation.price}
                     </div>
@@ -74,18 +82,15 @@ const CoursesSection = () => {
                     {formation.homeTraining && (
                       <div className="mx-auto mb-3 max-w-xs rounded-xl bg-white/15 backdrop-blur-sm border border-white/20 px-3 py-2">
                         <div className="flex items-center justify-center gap-2">
-                          <span className="text-lg">🏠</span>
+                          <span className="text-lg">🎥</span>
 
                           <div className="text-left">
                             <p className="text-[11px] font-semibold text-white">
-                              Formação ao Domicílio
+                              Acesso Vitalício
                             </p>
 
                             <p className="text-[10px] text-red-100">
-                              Acréscimo de{" "}
-                              <span className="font-bold text-yellow-300">
-                                {formation.homeTraining}
-                              </span>
+                              {formation.homeTraining}
                             </p>
                           </div>
                         </div>
@@ -131,7 +136,7 @@ const CoursesSection = () => {
               );
             }
 
-            // CARDS NORMAIS (id: 1, 2, 3)
+            // CARDS NORMAIS (id: 1, 2, 3, 5)
             return (
               <div
                 key={formation.id}
@@ -153,7 +158,14 @@ const CoursesSection = () => {
                     <h3 className="text-sm font-bold text-white mb-1 text-center leading-tight">
                       {formation.title}
                     </h3>
-                    <div className="w-8 h-0.5 bg-white/50 mx-auto" />
+                    
+                    {/* Badge de Curso Gravado */}
+                    <div className="mt-1 inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm text-white px-2 py-0.5 rounded-full text-[8px] font-bold">
+                      <Video className="h-2.5 w-2.5" />
+                      GRAVADO
+                    </div>
+                    
+                    <div className="w-8 h-0.5 bg-white/50 mx-auto mt-1" />
                   </div>
 
                   <div className="absolute bottom-2 left-2 flex h-7 w-7 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm text-white shadow-lg">
@@ -169,7 +181,7 @@ const CoursesSection = () => {
 
                   {/* FEATURES */}
                   <div className="flex flex-wrap gap-1 mb-2">
-                    {formation.features.map((feature) => (
+                    {formation.features.slice(0, 4).map((feature) => (
                       <span
                         key={feature}
                         className="text-[9px] px-1.5 py-0.5 rounded-full bg-[#F5F5F5] border border-[#E5E5E5]"
@@ -177,6 +189,11 @@ const CoursesSection = () => {
                         {feature}
                       </span>
                     ))}
+                    {formation.features.length > 4 && (
+                      <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-[#F5F5F5] border border-[#E5E5E5] text-gray-500">
+                        +{formation.features.length - 4}
+                      </span>
+                    )}
                   </div>
 
                   {/* PRICE */}
@@ -189,32 +206,21 @@ const CoursesSection = () => {
                       {formation.price}
                     </p>
 
-                    {formation.registration && (
-                      <p className="text-[10px] text-gray-500">
-                        Inscrição: <strong>{formation.registration}</strong>
-                      </p>
-                    )}
+                    <div className="mt-2 rounded-lg border border-red-200 bg-red-50 px-2 py-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm">🎥</span>
 
-                    {formation.homeTraining && (
-                      <div className="mt-2 rounded-lg border border-amber-200 bg-amber-50 px-2 py-2">
-                        <div className="flex items-center gap-2">
-                          <span className="text-sm">🏠</span>
+                        <div>
+                          <p className="text-[10px] font-semibold text-red-700">
+                            Acesso Vitalício
+                          </p>
 
-                          <div>
-                            <p className="text-[10px] font-semibold text-amber-700">
-                              Formação ao Domicílio
-                            </p>
-
-                            <p className="text-[9px] text-gray-600">
-                              Disponível com um valor adicional de{" "}
-                              <span className="font-semibold text-amber-700">
-                                {formation.homeTraining}
-                              </span>
-                            </p>
-                          </div>
+                          <p className="text-[9px] text-gray-600">
+                            Assista quando e onde quiser
+                          </p>
                         </div>
                       </div>
-                    )}
+                    </div>
                   </div>
 
                   {/* BUTTONS */}
@@ -250,4 +256,4 @@ const CoursesSection = () => {
   );
 };
 
-export default CoursesSection;
+export default RecordedCoursesSection;

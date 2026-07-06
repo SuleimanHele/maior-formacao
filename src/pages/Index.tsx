@@ -3,6 +3,7 @@ import HeroSection from "@/components/formacao/HeroSection";
 import AboutSection from "@/components/formacao/AboutSection";
 import TrainerSection from "@/components/formacao/TrainerSection";
 import CoursesSection from "@/components/formacao/CoursesSection";
+import RecordedCoursesSection from "@/components/formacao/RecordedCoursesSection";
 import DifferentialsSection from "@/components/formacao/DifferentialsSection";
 import ResultsSection from "@/components/formacao/ResultsSection";
 import ScheduleSection from "@/components/formacao/ScheduleSection";
@@ -18,6 +19,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <CoursesSection />
+      <RecordedCoursesSection />
       <TrainerSection />
       <DifferentialsSection />
       <ResultsSection />
