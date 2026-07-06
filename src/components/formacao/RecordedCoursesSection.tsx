@@ -7,11 +7,11 @@ import CourseModal from "./CourseModal";
 
 // Links de pagamento para cada curso gravado
 const paymentLinks: Record<number, string> = {
-  1: "https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6",
+  1: "https://paygooo.goootrafego.com/checkout/151167be-51f0-4485-acef-45714e71d113",
   2: "https://paygooo.goootrafego.com/checkout/curso-gravado-ia",
   3: "https://paygooo.goootrafego.com/checkout/curso-gravado-websites",
   4: "https://paygooo.goootrafego.com/checkout/curso-gravado-premium",
-  5: "https://paygooo.goootrafego.com/checkout/curso-gravado-edicao-video", // Link para edição de vídeo
+  5: "https://paygooo.goootrafego.com/checkout/curso-gravado-edicao-video",
 };
 
 const RecordedCoursesSection = () => {
@@ -34,12 +34,8 @@ const RecordedCoursesSection = () => {
             Formações Online
           </div>
 
-          <h2 className="text-[34px] md:text-[52px] font-bold text-[#0B0B0B] mb-4">
-            Cursos <span className="text-[#E10600]">Gravados</span>
-          </h2>
-
           <p className="text-[16px] md:text-[18px] text-[#4B4B4B]">
-            Os mesmos cursos presenciais, agora em versão gravada para você assistir quando quiser.
+            Os mesmos cursos presenciais, agora em versão online para você assistir onde quiser.
           </p>
         </div>
 
@@ -72,7 +68,7 @@ const RecordedCoursesSection = () => {
                     {/* Badge de Curso Gravado */}
                     <div className="inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold mb-2">
                       <Video className="h-3 w-3" />
-                      VERSÃO GRAVADA
+                      VERSÃO ONLINE
                     </div>
 
                     <div className="text-2xl font-bold text-white mb-2">
@@ -86,7 +82,7 @@ const RecordedCoursesSection = () => {
 
                           <div className="text-left">
                             <p className="text-[11px] font-semibold text-white">
-                              Acesso Vitalício
+                              Acesso Imediato
                             </p>
 
                             <p className="text-[10px] text-red-100">
@@ -101,6 +97,15 @@ const RecordedCoursesSection = () => {
                       ⭐ RECOMENDADO
                     </div>
                   </div>
+
+                  {/* Overlay de indisponível no card premium */}
+                  {!formation.isAvailable && (
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <span className="bg-gray-900 text-white text-xs font-bold px-4 py-2 rounded-full">
+                        EM BREVE
+                      </span>
+                    </div>
+                  )}
 
                   {/* LISTA DE FEATURES */}
                   <div className="p-3">
@@ -122,14 +127,23 @@ const RecordedCoursesSection = () => {
                         Detalhes
                       </button>
 
-                      <a
-                        href={paymentLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 bg-[#E10600] text-white py-2 rounded-xl font-medium text-center hover:bg-red-700 transition text-xs"
-                      >
-                        Inscrever-se
-                      </a>
+                      {formation.isAvailable ? (
+                        <a
+                          href={paymentLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 bg-[#E10600] text-white py-2 rounded-xl font-medium text-center hover:bg-red-700 transition text-xs"
+                        >
+                          Inscrever-se
+                        </a>
+                      ) : (
+                        <button
+                          disabled
+                          className="flex-1 bg-gray-300 text-gray-500 py-2 rounded-xl font-medium text-center cursor-not-allowed text-xs"
+                        >
+                          Indisponível
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -145,6 +159,7 @@ const RecordedCoursesSection = () => {
                   rounded-2xl overflow-hidden
                   transition-all duration-300
                   hover:-translate-y-1 hover:border-red-300 hover:shadow-xl
+                  relative
                 "
               >
                 {/* HEADER COM NOME DA FORMAÇÃO */}
@@ -162,7 +177,7 @@ const RecordedCoursesSection = () => {
                     {/* Badge de Curso Gravado */}
                     <div className="mt-1 inline-flex items-center gap-1 bg-white/20 backdrop-blur-sm text-white px-2 py-0.5 rounded-full text-[8px] font-bold">
                       <Video className="h-2.5 w-2.5" />
-                      GRAVADO
+                      ONLINE
                     </div>
                     
                     <div className="w-8 h-0.5 bg-white/50 mx-auto mt-1" />
@@ -171,6 +186,15 @@ const RecordedCoursesSection = () => {
                   <div className="absolute bottom-2 left-2 flex h-7 w-7 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm text-white shadow-lg">
                     <Icon className="h-3 w-3" />
                   </div>
+
+                  {/* Overlay de indisponível */}
+                  {!formation.isAvailable && (
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                      <span className="bg-gray-900 text-white text-xs font-bold px-4 py-2 rounded-full">
+                        EM BREVE
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* CONTENT */}
@@ -212,7 +236,7 @@ const RecordedCoursesSection = () => {
 
                         <div>
                           <p className="text-[10px] font-semibold text-red-700">
-                            Acesso Vitalício
+                            Acesso Imediato
                           </p>
 
                           <p className="text-[9px] text-gray-600">
@@ -232,14 +256,23 @@ const RecordedCoursesSection = () => {
                       Detalhes
                     </button>
 
-                    <a
-                      href={paymentLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 bg-[#E10600] text-white py-1.5 rounded-xl font-medium text-center hover:bg-red-700 transition text-[10px]"
-                    >
-                      Inscrever-se
-                    </a>
+                    {formation.isAvailable ? (
+                      <a
+                        href={paymentLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 bg-[#E10600] text-white py-1.5 rounded-xl font-medium text-center hover:bg-red-700 transition text-[10px]"
+                      >
+                        Inscrever-se
+                      </a>
+                    ) : (
+                      <button
+                        disabled
+                        className="flex-1 bg-gray-300 text-gray-500 py-1.5 rounded-xl font-medium text-center cursor-not-allowed text-[10px]"
+                      >
+                        Indisponível
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
