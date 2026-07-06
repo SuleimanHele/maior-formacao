@@ -11,6 +11,7 @@ import FAQSection from "@/components/formacao/FAQSection";
 import CTASection from "@/components/formacao/CTASection";
 import ContactSection from "@/components/formacao/ContactSection";
 import WhatsAppButton from "@/components/formacao/WhatsAppButton";
+import ConsultingSection from "@/components/formacao/ConsultingSection"; // Importar a seção de consultoria
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <AboutSection />
       <CoursesSection />
       <RecordedCoursesSection />
+      <ConsultingSection /> {/* Adicionar seção de consultoria */}
       <TrainerSection />
       <DifferentialsSection />
       <ResultsSection />

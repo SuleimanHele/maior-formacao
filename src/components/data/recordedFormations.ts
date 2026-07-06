@@ -27,7 +27,7 @@ export const recordedFormations: Formation[] = [
   {
     id: 1,
     slug: "trafego-pago-Do Basico ao Avancado",
-    title: "Formação Completa de Tráfego Pago (Para Gestor de Anuncio)",
+    title: "Formação Completa de Tráfego Pago (Para Gestor de Trafego)",
     description:
       "Aprenda a criar, otimizar e gerir campanhas publicitárias do zero ao avançado e torne-se um Gestor de Anúncios profissional, capaz de gerir contas de clientes e gerar resultados reais.",
     image: "",

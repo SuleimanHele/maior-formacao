@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Sparkles, Video } from "lucide-react";
 
 import { recordedFormations, type Formation } from "../data/recordedFormations";
-import CourseModal from "./CourseModal";
+import CourseModalOnline from "./CourseModalOnline"; // Importar o novo modal online
 
 // Links de pagamento para cada curso gravado
 const paymentLinks: Record<number, string> = {
@@ -281,7 +281,8 @@ const RecordedCoursesSection = () => {
         </div>
       </div>
 
-      <CourseModal
+      {/* Usar o novo modal online */}
+      <CourseModalOnline
         course={selectedCourse}
         onClose={() => setSelectedCourse(null)}
       />
