@@ -43,7 +43,7 @@ export const formacoesSucesso: Record<string, FormacaoSucesso> = {
   "trafego-pago": {
 
     title:
-      "Tráfego Pago + Importação",
+      "Tráfego Pago + Importação + IA",
 
     mode:
       "Presencial",
@@ -53,7 +53,7 @@ export const formacoesSucesso: Record<string, FormacaoSucesso> = {
    */
 
     message:
-      "O teu pagamento foi recebido com sucesso. Para concluir a inscrição na formação Tráfego Pago + Importação, confirma agora através do WhatsApp.",
+      "O teu pagamento foi recebido com sucesso. Para concluir a inscrição na formação Tráfego Pago + Importação + IA, confirma agora através do WhatsApp.",
 
     steps: [
       "Pagamento recebido",
@@ -64,7 +64,7 @@ export const formacoesSucesso: Record<string, FormacaoSucesso> = {
     whatsapp,
 
     whatsappMessage:
-      "Olá MAGAF, acabei de realizar o pagamento da formação Tráfego Pago + Importação. Envio esta mensagem para confirmar a minha inscrição e receber os próximos passos."
+      "Olá MAGAF, acabei de realizar o pagamento da formação Tráfego Pago + Importação + IA. Envio esta mensagem para confirmar a minha inscrição e receber os próximos passos."
 
   },
 

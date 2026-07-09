@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/244936351564?text=Olá! Quero saber mais sobre a formação da MAGAF.";
+const WHATSAPP_LINK = "https://wa.me/244936351564?text=Olá%20equipa%20MAGAF!%20Tenho%20interesse%20na%20formação%20e%20gostaria%20de%20obter%20mais%20informações.%20Podem%20ajudar-me%3F";
 
 const WhatsAppButton = () => {
   return (

@@ -8,16 +8,12 @@ import {
   Sparkles,
   ArrowRight,
   Monitor,
-  Calendar,
 } from "lucide-react";
 
 import type { LucideIcon } from "lucide-react";
 
-const CHECKOUT_LINK =
-  "https://paygooo.goootrafego.com/checkout/8b7954a6-0f67-4977-bdaf-74fe343568c6";
-
 const WHATSAPP_BOOKING =
-  "https://wa.me/244936351564?text=Olá! Quero fazer uma marcação para a formação da MAGAF.";
+  "https://wa.me/244936351564?text=Olá%20equipa%20MAGAF!%20Tenho%20interesse%20na%20formação%20e%20gostaria%20de%20obter%20mais%20informações.%20Podem%20ajudar-me%3F";
 
 type ScheduleCardItem = {
   label: string;
@@ -69,28 +65,28 @@ const cards: ScheduleCard[] = [
     ],
   },
 
- {
-  id: 3,
-  title: "Suporte aos Alunos",
-  icon: Headphones,
-  items: [
-    {
-      label: "Dias",
-      value: "Segunda até Quinta",
-      icon: Headphones,
-    },
-    {
-      label: "Horário",
-      value: "10H às 15H",
-      icon: Clock3,
-    },
-    {
-      label: "Modalidade",
-      value: "Presencial e Online",
-      icon: Monitor, // ou Monitor / Laptop dependendo do teu design system
-    },
-  ],
-}
+  {
+    id: 3,
+    title: "Suporte aos Alunos",
+    icon: Headphones,
+    items: [
+      {
+        label: "Dias",
+        value: "Segunda até Quinta",
+        icon: Headphones,
+      },
+      {
+        label: "Horário",
+        value: "10H às 15H",
+        icon: Clock3,
+      },
+      {
+        label: "Modalidade",
+        value: "Presencial e Online",
+        icon: Monitor,
+      },
+    ],
+  },
 ];
 
 const ScheduleSection = () => {
@@ -110,10 +106,8 @@ const ScheduleSection = () => {
         <div className="text-center max-w-2xl mx-auto mb-14">
 
           <div className="inline-flex items-center gap-2 rounded-full border border-[#E10600]/20 bg-[#E10600]/10 px-4 py-2 text-xs font-medium text-[#E10600] mb-5">
-
             <Sparkles className="h-4 w-4" />
             Informações da Formação
-
           </div>
 
           <h2 className="text-3xl md:text-5xl font-black text-[#0B0B0B] mb-5">
@@ -150,16 +144,12 @@ const ScheduleSection = () => {
                 "
               >
 
-                {/* HOVER GLOW */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-[#E10600]/5 via-transparent to-transparent" />
 
-                {/* HEADER */}
                 <div className="relative z-10 flex items-center gap-3 mb-6">
 
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#E10600]/10 text-[#E10600]">
-
                     <Icon className="h-5 w-5" />
-
                   </div>
 
                   <h3 className="text-lg font-bold text-[#0B0B0B]">
@@ -168,7 +158,6 @@ const ScheduleSection = () => {
 
                 </div>
 
-                {/* ITEMS */}
                 <div className="relative z-10 space-y-4">
 
                   {card.items.map((item) => {
@@ -211,27 +200,58 @@ const ScheduleSection = () => {
 
         </div>
 
-        {/* CTA BUTTONS */}
+        {/* CTA */}
         <div className="text-center mb-10">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={CHECKOUT_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#E10600] px-10 py-4 text-lg font-semibold text-white hover:opacity-90 transition-opacity"
-            >
-              Garantir minha vaga
-            </a>
+
+          <div className="max-w-xl mx-auto">
+
             <a
               href={WHATSAPP_BOOKING}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-[#E10600] px-10 py-4 text-lg font-semibold text-[#E10600] hover:bg-[#E10600] hover:text-white transition-colors"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                gap-3
+
+                rounded-xl
+
+                bg-[#E10600]
+
+                px-10
+                py-4
+
+                text-lg
+                font-bold
+                text-white
+
+                shadow-lg
+                shadow-[#E10600]/20
+
+                transition-all
+                duration-300
+
+                hover:-translate-y-1
+                hover:bg-[#c90500]
+                hover:shadow-xl
+              "
             >
-              <Calendar className="h-5 w-5" />
-              Fazer marcação
+              <MessageCircle className="h-6 w-6" />
+
+              Falar com a Equipa MAGAF
+
+              <ArrowRight className="h-5 w-5" />
             </a>
+
+            <p className="mt-4 text-sm text-[#4B4B4B] leading-relaxed">
+              Tire todas as suas dúvidas, receba orientação personalizada e
+              descubra qual é a melhor formação para si antes de efetuar a sua
+              inscrição.
+            </p>
+
           </div>
+
         </div>
 
         {/* ALERT */}
@@ -254,10 +274,8 @@ const ScheduleSection = () => {
             "
           >
 
-            {/* SHINE */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#E10600]/10 to-transparent animate-[shine_3s_linear_infinite]" />
 
-            {/* DOT */}
             <span className="relative flex h-3 w-3">
 
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E10600] opacity-75" />
@@ -274,7 +292,7 @@ const ScheduleSection = () => {
 
           </div>
 
-        </div>        
+        </div>
 
       </div>
     </section>

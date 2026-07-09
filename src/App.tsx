@@ -38,7 +38,7 @@ const App = () => {
             {/* COURSES */}
             <Route path="/courses/trafego-pago" element={<TrafegoPago />} />
             <Route path="/courses/Websites" element={<CursoIa />} />
-            <Route path="/courses/agenteia" element={<AgenteIa />} />
+            <Route path="/courses/inteligencia-artlificial" element={<AgenteIa />} />
 
             {/* SUCCESS */}
             <Route path="/sucess/:curso" element={<Sucess />} />
