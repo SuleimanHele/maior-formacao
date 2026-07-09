@@ -10,6 +10,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
 import Sucess from "./pages/Sucess.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Consultoria from "@/pages/consultoria";
+import { formacoesSucesso } from "@/components/data/formacoesSucesso";
 
 // NOVA PÁGINA DE CURSO
 import TrafegoPago from "./pages/courses/Trafego-pago.tsx";
@@ -31,6 +33,7 @@ const App = () => {
 
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/consultoria" element={<Consultoria />} />
 
             {/* COURSES */}
             <Route path="/courses/trafego-pago" element={<TrafegoPago />} />
@@ -38,7 +41,7 @@ const App = () => {
             <Route path="/courses/agenteia" element={<AgenteIa />} />
 
             {/* SUCCESS */}
-            <Route path="/sucess" element={<Sucess />} />
+            <Route path="/sucess/:curso" element={<Sucess />} />
 
             {/* FALLBACK */}
             <Route path="*" element={<NotFound />} />

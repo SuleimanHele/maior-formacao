@@ -57,7 +57,7 @@ export const recordedFormations: Formation[] = [
   {
     id: 5,
     slug: "edicao-video-Online",
-    title: "Edição de Vídeo (Online)",
+    title: "Edição de Vídeo",
     description:
       "Aprenda a editar vídeos profissionais para redes sociais, YouTube e marketing digital. Versão gravada com acesso vitalício.",
     image: "",
@@ -139,7 +139,7 @@ Criadores de conteúdo, YouTubers, Instagrammers, empreendedores digitais, profi
     slug: "websites-gravado",
     title: "Criação de Websites com IA",
     description:
-      "Aprenda a criar websites e aplicações modernas usando Inteligência Artificial. Versão gravada com acesso vitalício.",
+      "Aprenda a criar websites e aplicações modernas usando Inteligência Artificial. Versão online com acesso vitalício.",
     image: "",
     icon: Brain,
     features: [

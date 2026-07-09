@@ -5,6 +5,7 @@ import {
   MapPin,
   Phone,
   Sparkles,
+  Mail,
 } from "lucide-react";
 
 import logoMagaf from "@/assets/logo-magaf.jpg";
@@ -56,6 +57,11 @@ const FooterSection = () => {
               <Sparkles className="h-4 w-4" />
               Formação prática e orientada a resultados
             </div>
+
+            {/* NIF */}
+            <div className="mt-4 text-xs text-white/40">
+              <span className="font-medium">NIF:</span> 1234567890
+            </div>
           </div>
 
           {/* COLUNA 2 - CONTACTOS */}
@@ -72,6 +78,14 @@ const FooterSection = () => {
               >
                 <Phone className="h-4 w-4" />
                 +244 936 351 564
+              </a>
+
+              <a
+                href="mailto:geral@magaf.org"
+                className="flex items-center gap-3 hover:text-[#E11D48] transition"
+              >
+                <Mail className="h-4 w-4" />
+                geral@magaf.org
               </a>
 
               <div className="flex items-center gap-3">
@@ -125,7 +139,7 @@ const FooterSection = () => {
 
         </div>
 
-        {/* CTA STRIP (mantido leve) */}
+        {/* CTA STRIP */}
         <div className="border-t border-white/10 pt-6 text-center text-xs text-white/40">
           © {new Date().getFullYear()} MAGAF. Todos os direitos reservados.
         </div>
