@@ -15,7 +15,7 @@ import {
   ShoppingBag,
   CreditCard,
 } from "lucide-react";
-import campaignImage from "@/assets/FormacaoPresencial.jpeg";
+import campaignImage from "@/assets/FormacaoPresencial.webp";
 
 const WHATSAPP_LINK =
   "https://wa.me/244936351564?text=Ol%C3%A1%21%20Quero%20fazer%20a%20minha%20inscri%C3%A7%C3%A3o%20na%20forma%C3%A7%C3%A3o%20da%20MAGAF.";
