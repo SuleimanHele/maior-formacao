@@ -1,37 +1,15 @@
-import Navbar from "@/components/formacao/Navbar";
-import HeroSection from "@/components/formacao/HeroSection";
-import AboutSection from "@/components/formacao/AboutSection";
-import TrainerSection from "@/components/formacao/TrainerSection";
-import CoursesSection from "@/components/formacao/CoursesSection";
-import RecordedCoursesSection from "@/components/formacao/RecordedCoursesSection";
-import DifferentialsSection from "@/components/formacao/DifferentialsSection";
-import ResultsSection from "@/components/formacao/ResultsSection";
-import ScheduleSection from "@/components/formacao/ScheduleSection";
-import FAQSection from "@/components/formacao/FAQSection";
-import CTASection from "@/components/formacao/CTASection";
-import ContactSection from "@/components/formacao/ContactSection";
-import WhatsAppButton from "@/components/formacao/WhatsAppButton";
-import ConsultingSection from "@/components/formacao/ConsultingSection"; // Importar a seção de consultoria
+import Navbar from "@/components/cursoCompleto/Navbar";
+import Hero from "@/components/cursoCompleto/Hero";
+import Footer from "@/components/cursoCompleto/Footer";
+import FloatingWhatsApp from "@/components/cursoCompleto/FloatingWhatsApp";
 
-const Index = () => {
+export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <CoursesSection />
-      <RecordedCoursesSection />
-      <ConsultingSection /> {/* Adicionar seção de consultoria */}
-      <TrainerSection />
-      <DifferentialsSection />
-      <ResultsSection />
-      <ScheduleSection />
-      <FAQSection />
-      <CTASection />
-      <ContactSection />
-      <WhatsAppButton />
+      <Hero />
+      <Footer />
+      <FloatingWhatsApp />
     </div>
   );
-};
-
-export default Index;
+}

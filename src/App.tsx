@@ -10,13 +10,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
 import Sucess from "./pages/Sucess.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import Consultoria from "@/pages/consultoria";
-import { formacoesSucesso } from "@/components/data/formacoesSucesso";
 
-// NOVA PÁGINA DE CURSO
-import TrafegoPago from "./pages/courses/Trafego-pago.tsx";
-import CursoIa from "./pages/courses/Curso-ia.tsx";
-import AgenteIa from "./pages/courses/vendedor.tsx";
+
 
 const queryClient = new QueryClient();
 
@@ -33,12 +28,6 @@ const App = () => {
 
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/consultoria" element={<Consultoria />} />
-
-            {/* COURSES */}
-            <Route path="/courses/trafego-pago" element={<TrafegoPago />} />
-            <Route path="/courses/Websites" element={<CursoIa />} />
-            <Route path="/courses/inteligencia-artlificial" element={<AgenteIa />} />
 
             {/* SUCCESS */}
             <Route path="/sucess/:curso" element={<Sucess />} />
