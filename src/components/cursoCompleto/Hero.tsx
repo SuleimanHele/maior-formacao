@@ -274,36 +274,51 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* CTA BUTTONS */}
-            <motion.div
-              variants={fadeUp}
-              className="mt-8 flex flex-col items-center gap-3 sm:flex-row md:items-start"
-            >
-              <motion.a
-                href={PAYGO_LINK}
-                target="_blank"
-                rel="noreferrer"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.97 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#E10600] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(225,6,0,0.6)]"
-              >
-                Garantir minha vaga
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </motion.a>
-              <motion.a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noreferrer"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.97 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3.5 text-sm font-semibold text-gray-800 transition-colors hover:border-[#E10600] hover:text-[#E10600]"
-              >
-                <MessageCircle className="h-4 w-4" />
-                Falar no WhatsApp
-              </motion.a>
-            </motion.div>
+            {/* PREÇOS + CTA */}
+<motion.div
+  variants={fadeUp}
+  className="mt-8 grid w-full max-w-xl gap-3 sm:grid-cols-2"
+>
+  {/* CARD INSCRIÇÃO */}
+  <motion.a
+    href={PAYGO_LINK}
+    target="_blank"
+    rel="noreferrer"
+    whileHover={{ scale: 1.03, y: -3 }}
+    whileTap={{ scale: 0.97 }}
+    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    className="group flex flex-col items-start gap-2 rounded-2xl bg-[#E10600] p-5 text-left text-white shadow-[0_10px_30px_-10px_rgba(225,6,0,0.6)]"
+  >
+    <span className="text-[10px] font-bold uppercase tracking-wider text-white/80">
+      Inscrição
+    </span>
+    <span className="text-3xl font-black leading-none">
+      5.000 Kz
+    </span>
+    <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-white/90">
+      Garantir minha vaga
+      <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+    </span>
+  </motion.a>
+
+  {/* CARD FORMAÇÃO */}
+  <motion.div
+    whileHover={{ scale: 1.03, y: -3 }}
+    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    className="flex flex-col items-start gap-2 rounded-2xl border-2 border-[#E10600] bg-white p-5 text-left text-gray-900"
+  >
+    <span className="text-[10px] font-bold uppercase tracking-wider text-[#E10600]">
+      Formação
+    </span>
+    <span className="text-3xl font-black leading-none text-[#E10600]">
+      50.000 Kz
+    </span>
+    <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-gray-600">
+      <MessageCircle className="h-3.5 w-3.5 text-[#E10600]" />
+      Paga-se no dia da formação
+    </span>
+  </motion.div>
+</motion.div>
 
             {/* TRUST POINTS */}
             <motion.div
