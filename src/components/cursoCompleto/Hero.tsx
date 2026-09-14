@@ -246,33 +246,36 @@ export default function Hero() {
 
             {/* BLOCO DE DATA */}
             <motion.div
-              variants={fadeUp}
-              className="mt-6 inline-flex items-center gap-3 rounded-2xl border border-gray-200 bg-gray-50 px-5 py-3"
-            >
-              <motion.div
-                animate={{ rotate: [0, -6, 6, 0] }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatDelay: 4,
-                  ease: "easeInOut",
-                }}
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E10600]/10"
-              >
-                <CalendarDays className="h-5 w-5 text-[#E10600]" />
-              </motion.div>
-              <div className="text-left">
-                <p className="text-[10px] font-medium uppercase tracking-wider text-gray-500">
-                  Início da Formação
-                </p>
-                <p className="text-lg font-black leading-none text-gray-900">
-                  10 de Outubro
-                </p>
-                <p className="text-xs text-gray-500">
-                  Todos os sábados · 12h às 15h
-                </p>
-              </div>
-            </motion.div>
+  variants={fadeUp}
+  className="mt-6 inline-flex items-center gap-3 rounded-2xl border border-gray-200 bg-gray-50 px-5 py-3"
+>
+  <motion.div
+    animate={{ rotate: [0, -6, 6, 0] }}
+    transition={{
+      duration: 3,
+      repeat: Infinity,
+      repeatDelay: 4,
+      ease: "easeInOut",
+    }}
+    className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E10600]/10"
+  >
+    <CalendarDays className="h-5 w-5 text-[#E10600]" />
+  </motion.div>
+  <div className="text-left">
+    <p className="text-[10px] font-medium uppercase tracking-wider text-gray-500">
+      Início da Formação
+    </p>
+    <p className="text-lg font-black leading-none text-gray-900">
+      10 de Outubro
+    </p>
+    <p className="text-xs text-gray-500">
+      Todos os sábados · 12h às 15h
+    </p>
+    <p className="mt-1 text-[11px] font-bold text-[#E10600]">
+      Duração: 1 mês
+    </p>
+  </div>
+</motion.div>
 
             {/* PREÇOS + CTA */}
 <motion.div
