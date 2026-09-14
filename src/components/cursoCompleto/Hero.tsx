@@ -114,67 +114,67 @@ export default function Hero() {
 
           {/* O QUE VAIS APRENDER */}
           <motion.div
-            variants={fadeUp}
-            className="mt-8 w-full max-w-xl rounded-2xl border border-gray-200 bg-gray-50 p-5 transition-colors hover:border-[#E10600]/40"
-          >
-            <div className="mb-4 flex items-center gap-2">
-              <Sparkles className="h-4 w-4 text-[#E10600]" />
-              <p className="text-[11px] font-bold uppercase tracking-wider text-gray-700">
-                O que vais aprender
-              </p>
-            </div>
-            <motion.div
-              variants={container}
-              initial="hidden"
-              animate="show"
-              className="grid grid-cols-2 gap-3"
-            >
-              {learnItems.map(({ icon: Icon, label }) => (
-                <motion.div
-                  key={label}
-                  variants={itemStagger}
-                  whileHover={{ y: -3, borderColor: "rgba(225,6,0,0.5)" }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-3 py-2.5 text-sm font-medium text-gray-800 shadow-sm"
-                >
-                  <Icon className="h-4 w-4 shrink-0 text-[#E10600]" />
-                  {label}
-                </motion.div>
-              ))}
-            </motion.div>
-          </motion.div>
+  variants={fadeUp}
+  className="mt-8 w-full max-w-xl rounded-2xl border border-[#E10600]/30 bg-[#E10600]/5 p-5 transition-colors hover:border-[#E10600]/60"
+>
+  <div className="mb-4 flex items-center gap-2">
+    <Sparkles className="h-4 w-4 text-[#E10600]" />
+    <p className="text-[11px] font-bold uppercase tracking-wider text-[#E10600]">
+      O que vais aprender
+    </p>
+  </div>
+  <motion.div
+    variants={container}
+    initial="hidden"
+    animate="show"
+    className="grid grid-cols-2 gap-3"
+  >
+    {learnItems.map(({ icon: Icon, label }) => (
+      <motion.div
+        key={label}
+        variants={itemStagger}
+        whileHover={{ y: -3, borderColor: "#E10600" }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        className="flex items-center gap-2 rounded-xl border border-[#E10600]/20 bg-white px-3 py-2.5 text-sm font-medium text-gray-900 shadow-sm transition-colors hover:bg-[#E10600]/5"
+      >
+        <Icon className="h-4 w-4 shrink-0 text-[#E10600]" />
+        {label}
+      </motion.div>
+    ))}
+  </motion.div>
+</motion.div>
 
           {/* BÓNUS */}
           <motion.div
-            variants={fadeUp}
-            className="mt-4 w-full max-w-xl rounded-2xl border border-[#E10600]/30 bg-[#E10600]/5 p-5 transition-colors hover:border-[#E10600]/50"
-          >
-            <div className="mb-4 flex items-center gap-2">
-              <Gift className="h-4 w-4 text-[#E10600]" />
-              <p className="text-[11px] font-bold uppercase tracking-wider text-gray-700">
-                Bónus incluídos
-              </p>
-            </div>
-            <motion.div
-              variants={container}
-              initial="hidden"
-              animate="show"
-              className="flex flex-wrap gap-2"
-            >
-              {bonusItems.map(({ icon: Icon, label }) => (
-                <motion.span
-                  key={label}
-                  variants={itemStagger}
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                  className="inline-flex items-center gap-2 rounded-full border border-[#E10600]/20 bg-white px-3 py-1.5 text-xs font-semibold text-gray-800 shadow-sm"
-                >
-                  <Icon className="h-3.5 w-3.5 text-[#E10600]" />
-                  {label}
-                </motion.span>
-              ))}
-            </motion.div>
-          </motion.div>
+  variants={fadeUp}
+  className="mt-4 w-full max-w-xl rounded-2xl border border-[#E10600]/40 bg-gradient-to-br from-[#E10600]/10 to-[#E10600]/5 p-5 transition-colors hover:border-[#E10600]/70"
+>
+  <div className="mb-4 flex items-center gap-2">
+    <Gift className="h-4 w-4 text-[#E10600]" />
+    <p className="text-[11px] font-bold uppercase tracking-wider text-[#E10600]">
+      Bónus incluídos
+    </p>
+  </div>
+  <motion.div
+    variants={container}
+    initial="hidden"
+    animate="show"
+    className="flex flex-wrap gap-2"
+  >
+    {bonusItems.map(({ icon: Icon, label }) => (
+      <motion.span
+        key={label}
+        variants={itemStagger}
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 300, damping: 18 }}
+        className="inline-flex items-center gap-2 rounded-full border border-[#E10600]/30 bg-white px-3 py-1.5 text-xs font-semibold text-gray-900 shadow-sm transition-colors hover:bg-[#E10600]/5"
+      >
+        <Icon className="h-3.5 w-3.5 text-[#E10600]" />
+        {label}
+      </motion.span>
+    ))}
+  </motion.div>
+</motion.div>
 
           {/* BLOCO DE DATA */}
           <motion.div
