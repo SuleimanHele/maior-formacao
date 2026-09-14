@@ -52,7 +52,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <MapPin className="h-4 w-4" />
-              Viana Executive Center, 3.º andar — Luanda, Angola
+              Viana Executive Center, 3.º andar, Sala do Qualifica— Luanda, Angola
             </div>
           </div>
         </div>
